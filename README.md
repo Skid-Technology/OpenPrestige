@@ -34,6 +34,7 @@ Build a self-contained mod jar (imgui-java + natives and ClassTransform are bund
 
 ```
 gradlew build
+```
 
 ## Credits
 
