@@ -1,7 +1,6 @@
 # Open Prestige
 
-A fully deobfuscated, IntelliJ-ready, runnable reconstruction of the Prestige client for Fabric 1.21.11,
-with a 1:1 Dear ImGui ClickGUI port.
+A fully deobfuscated, IntelliJ-ready, runnable open sourced version of the Prestige client for Fabric 1.21.11.
 
 <p align="center">
   <img src="docs/img/deobf-bird.png" width="260" alt="Deobf?">
@@ -13,18 +12,11 @@ with a 1:1 Dear ImGui ClickGUI port.
 </p>
 
 Cracked by Skid Solutions.
+Join the Discord: https://discord.gg/skidsolutions
 
-## Contact
-
-Want the latest, have questions, or want to contribute? Email **vikaslagerwij@gmail.com**.
-
-Join the Discord: https://discord.gg/5FB5hqJacr
-
-## Requirements
-
-- JDK 21 (`C:\Program Files\Java\jdk-21`); Gradle 9.6.1 comes with the wrapper
-- Minecraft 1.21.11, Fabric Loader 0.19.x, Yarn `1.21.11+build.4`
-- Loom plugin `net.fabricmc.fabric-loom-remap` 1.17.21
+## Why?
+zPrestige couldnt give a fuck it seems about his client. AI slop all over, no time nor thought it seems goes into testing if things actually work. banned in 2 games with the most popular CAS config on mcpvp with countless modules flagging grim on actest.
+vikas please also, improve your prot. i shouldnt be able to get all the files for your shitty client running a **single** 200 line python file. :sob: 
 
 ## Run
 
@@ -42,23 +34,10 @@ Build a self-contained mod jar (imgui-java + natives and ClassTransform are bund
 
 ```
 gradlew build
-```
-
-## Layout
-
-| Path | What |
-| --- | --- |
-| `src/main/java/dev/zprestige/prestige/` | the client: 121 modules under `module/`, helpers in `event/ hud/ render/ world/ ...` |
-| `.../prestige/ui/` | the ImGui ClickGUI (`bridge/` binds it to the live modules, `mc/` is the overlay, `mixin/` the input hooks) |
-| `.../prestige/engine/` | the hook engine (ClassTransform) that installs the client's Minecraft hooks |
-| `src/main/resources/` | fonts, icons, shaders, mixin configs, access widener |
-| `docs/` | name mappings and notes |
-
-Configs created in the Configs tab are stored in `<game dir>/prestige/configs/`.
 
 ## Credits
 
 - **technix**: sourcing / Frida scripts
 - **stutheguyy**: fixing
 - **bynbang / nitrogenoliquido**: ZKM transformers
-- **dario claude man**: AI models
+- **dario**: AI models
