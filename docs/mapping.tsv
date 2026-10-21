@@ -1,0 +1,275 @@
+# Prestige API-surface rename map. Columns (TAB): kind  owner  name  descriptor  new
+# kind C = class (owner = old internal name, new = new internal name); F = field; M = method.
+# Owner/name/descriptor use the OLD (obfuscated) names. Applied by client/tools/rename.sh (tiny-remapper) from
+# client/tools/build_runtime.sh; client/tools/rename_manifest.py applies the same file to manifest_live.json.
+C	dev/zprestige/prestige/dV			dev/zprestige/prestige/Module
+C	dev/zprestige/prestige/i			dev/zprestige/prestige/Category
+C	dev/zprestige/prestige/dK			dev/zprestige/prestige/Setting
+C	dev/zprestige/prestige/dU			dev/zprestige/prestige/SettingHolder
+C	dev/zprestige/prestige/dM			dev/zprestige/prestige/BoolSetting
+C	dev/zprestige/prestige/dN			dev/zprestige/prestige/ColorSetting
+C	dev/zprestige/prestige/dO			dev/zprestige/prestige/FloatSetting
+C	dev/zprestige/prestige/dP			dev/zprestige/prestige/IntSetting
+C	dev/zprestige/prestige/dQ			dev/zprestige/prestige/RangeSetting
+C	dev/zprestige/prestige/dR			dev/zprestige/prestige/EnumSetting
+C	dev/zprestige/prestige/dS			dev/zprestige/prestige/MultiSetting
+C	dev/zprestige/prestige/dL			dev/zprestige/prestige/KeybindSetting
+C	dev/zprestige/prestige/dT			dev/zprestige/prestige/TextSetting
+C	dev/zprestige/prestige/bO			dev/zprestige/prestige/EventBus
+C	dev/zprestige/prestige/cJ			dev/zprestige/prestige/ModuleManager
+C	dev/zprestige/prestige/e_			dev/zprestige/prestige/MenuModule
+C	dev/zprestige/prestige/q			dev/zprestige/prestige/Gamemode
+C	dev/zprestige/prestige/bP			dev/zprestige/prestige/Subscribe
+C	dev/zprestige/prestige/cy			dev/zprestige/prestige/ListenerEntry
+F	dev/zprestige/prestige/dK	a	Ljava/lang/String;	name
+F	dev/zprestige/prestige/dK	b	Ljava/lang/Object;	value
+F	dev/zprestige/prestige/dK	c	Ljava/lang/String;	description
+F	dev/zprestige/prestige/dK	d	Ljava/util/function/Predicate;	visibility
+M	dev/zprestige/prestige/dK	a	()Ljava/lang/String;	getName
+M	dev/zprestige/prestige/dK	a	([Ljava/lang/Object;)V	setName
+M	dev/zprestige/prestige/dK	a	()Ljava/lang/Object;	getValue
+M	dev/zprestige/prestige/dK	a	(Ljava/lang/Object;)V	setValue
+M	dev/zprestige/prestige/dK	b	()Ljava/lang/String;	getDescription
+M	dev/zprestige/prestige/dK	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dK;	setVisibility
+M	dev/zprestige/prestige/dK	a	()Z	isVisible
+M	dev/zprestige/prestige/dM	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dM;	setVisibility
+M	dev/zprestige/prestige/dN	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dN;	setVisibility
+M	dev/zprestige/prestige/dO	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dO;	setVisibility
+M	dev/zprestige/prestige/dP	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dP;	setVisibility
+M	dev/zprestige/prestige/dQ	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dQ;	setVisibility
+M	dev/zprestige/prestige/dR	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dR;	setVisibility
+M	dev/zprestige/prestige/dS	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dS;	setVisibility
+M	dev/zprestige/prestige/dL	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dL;	setVisibility
+M	dev/zprestige/prestige/dT	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dT;	setVisibility
+F	dev/zprestige/prestige/dO	a	F	min
+F	dev/zprestige/prestige/dO	b	F	max
+M	dev/zprestige/prestige/dO	a	()F	getMin
+M	dev/zprestige/prestige/dO	b	()F	getMax
+F	dev/zprestige/prestige/dP	a	I	min
+F	dev/zprestige/prestige/dP	b	I	max
+M	dev/zprestige/prestige/dP	a	()I	getMin
+M	dev/zprestige/prestige/dP	b	()I	getMax
+F	dev/zprestige/prestige/dQ	a	F	min
+F	dev/zprestige/prestige/dQ	b	F	max
+F	dev/zprestige/prestige/dQ	c	F	low
+F	dev/zprestige/prestige/dQ	d	F	high
+F	dev/zprestige/prestige/dQ	e	F	rolled
+M	dev/zprestige/prestige/dQ	a	()F	getLow
+M	dev/zprestige/prestige/dQ	a	(F)V	setLow
+M	dev/zprestige/prestige/dQ	b	()F	getHigh
+M	dev/zprestige/prestige/dQ	b	(F)V	setHigh
+M	dev/zprestige/prestige/dQ	c	()F	getMin
+M	dev/zprestige/prestige/dQ	d	()F	getMax
+M	dev/zprestige/prestige/dQ	e	([Ljava/lang/Object;)F	getRolled
+M	dev/zprestige/prestige/dQ	c	([Ljava/lang/Object;)V	setRolled
+M	dev/zprestige/prestige/dQ	b	([Ljava/lang/Object;)V	reroll
+M	dev/zprestige/prestige/dQ	f	([Ljava/lang/Object;)F	randomInRange
+F	dev/zprestige/prestige/dR	a	[Ljava/lang/String;	options
+M	dev/zprestige/prestige/dR	a	()[Ljava/lang/String;	getOptions
+F	dev/zprestige/prestige/dS	a	[Ljava/lang/String;	options
+F	dev/zprestige/prestige/dS	b	[Z	selected
+F	dev/zprestige/prestige/dS	c	Ljava/util/Map;	indexByOption
+M	dev/zprestige/prestige/dS	a	()[Ljava/lang/String;	getOptions
+M	dev/zprestige/prestige/dS	a	([Ljava/lang/Object;)Z	isSelected
+M	dev/zprestige/prestige/dS	a	(Ljava/lang/String;Z)V	setSelected
+M	dev/zprestige/prestige/dS	a	()[Z	getSelected
+F	dev/zprestige/prestige/dT	a	Ljava/lang/String;	placeholder
+M	dev/zprestige/prestige/dT	c	([Ljava/lang/Object;)Ljava/lang/String;	getPlaceholder
+F	dev/zprestige/prestige/dL	a	Z	toggleMode
+M	dev/zprestige/prestige/dL	b	()Z	isToggleMode
+M	dev/zprestige/prestige/dL	a	(Z)V	setToggleMode
+M	dev/zprestige/prestige/dL	c	([Ljava/lang/Object;)Z	isPressed
+F	dev/zprestige/prestige/dU	a	Ljava/util/ArrayList;	settings
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dL;	addKeybind
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dM;	addBool
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dO;	addFloat
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dP;	addInt
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dQ;	addRange
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dT;	addText
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dR;	addEnum
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dN;	addColor
+M	dev/zprestige/prestige/dU	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/dS;	addMulti
+F	dev/zprestige/prestige/dV	c	Ljava/util/List;	coreSettings
+F	dev/zprestige/prestige/dV	d	Ldev/zprestige/prestige/dM;	enabledSetting
+F	dev/zprestige/prestige/dV	e	Ljava/lang/String;	name
+F	dev/zprestige/prestige/dV	f	Ldev/zprestige/prestige/dL;	keybind
+F	dev/zprestige/prestige/dV	g	Ldev/zprestige/prestige/i;	category
+F	dev/zprestige/prestige/dV	h	Ljava/lang/String;	description
+F	dev/zprestige/prestige/dV	i	Z	lastEnabled
+F	dev/zprestige/prestige/dV	j	Ljava/util/List;	allSettingsCache
+M	dev/zprestige/prestige/dV	a	()Z	isEnabled
+M	dev/zprestige/prestige/dV	b	([Ljava/lang/Object;)I	getKey
+M	dev/zprestige/prestige/dV	b	([Ljava/lang/Object;)Ldev/zprestige/prestige/dL;	getKeybind
+M	dev/zprestige/prestige/dV	a	([Ljava/lang/Object;)V	toggle
+M	dev/zprestige/prestige/dV	b	([Ljava/lang/Object;)V	applyState
+M	dev/zprestige/prestige/dV	c	([Ljava/lang/Object;)V	dispose
+M	dev/zprestige/prestige/dV	d	([Ljava/lang/Object;)V	onEnable
+M	dev/zprestige/prestige/dV	e	([Ljava/lang/Object;)V	onDisable
+M	dev/zprestige/prestige/dV	a	([Ljava/lang/Object;)Ljava/lang/String;	getInfo
+M	dev/zprestige/prestige/dV	a	([Ljava/lang/Object;)Ljava/util/List;	getCoreSettings
+M	dev/zprestige/prestige/dV	b	()Ljava/lang/String;	getName
+M	dev/zprestige/prestige/dV	f	([Ljava/lang/Object;)V	setName
+M	dev/zprestige/prestige/dV	c	()Ljava/lang/String;	getDescription
+M	dev/zprestige/prestige/dV	g	([Ljava/lang/Object;)V	setDescription
+M	dev/zprestige/prestige/dV	a	()Ldev/zprestige/prestige/i;	getCategory
+M	dev/zprestige/prestige/dV	h	([Ljava/lang/Object;)V	setCategory
+M	dev/zprestige/prestige/dV	c	([Ljava/lang/Object;)Z	getLastEnabled
+M	dev/zprestige/prestige/dV	i	([Ljava/lang/Object;)V	setLastEnabled
+M	dev/zprestige/prestige/dV	b	()Ljava/util/List;	getSettings
+M	dev/zprestige/prestige/dV	a	([Ljava/lang/Object;)Ljava/util/Set;	getGamemodes
+M	dev/zprestige/prestige/dV	c	()I	getGamemodeMask
+F	dev/zprestige/prestige/cJ	a	Ldev/zprestige/prestige/e_;	menu
+F	dev/zprestige/prestige/cJ	c	Ljava/util/List;	modules
+F	dev/zprestige/prestige/cJ	d	Ljava/util/concurrent/ConcurrentLinkedQueue;	enableQueue
+F	dev/zprestige/prestige/cJ	e	Ljava/util/concurrent/ConcurrentLinkedQueue;	disableQueue
+M	dev/zprestige/prestige/cJ	a	(Ldev/zprestige/prestige/bG;)V	onTick
+M	dev/zprestige/prestige/cJ	a	([Ljava/lang/Object;)V	queueEnable
+M	dev/zprestige/prestige/cJ	b	([Ljava/lang/Object;)V	queueDisable
+M	dev/zprestige/prestige/cJ	a	()Ljava/util/List;	getModules
+M	dev/zprestige/prestige/cJ	a	(Ljava/util/List;)V	setModules
+M	dev/zprestige/prestige/cJ	a	([Ljava/lang/Object;)Ldev/zprestige/prestige/e_;	getMenu
+M	dev/zprestige/prestige/cJ	a	(Ljava/awt/Color;)V	setMenuColor
+M	dev/zprestige/prestige/cJ	a	(I)V	setMenuKey
+F	dev/zprestige/prestige/e_	f	Ldev/zprestige/prestige/dL;	menuKey
+F	dev/zprestige/prestige/e_	b	Ldev/zprestige/prestige/dR;	descriptionMode
+F	dev/zprestige/prestige/e_	d	Ldev/zprestige/prestige/dM;	rounded
+F	dev/zprestige/prestige/e_	c	Ldev/zprestige/prestige/dN;	menuColor
+M	dev/zprestige/prestige/e_	c	([Ljava/lang/Object;)Ldev/zprestige/prestige/dL;	getMenuKey
+M	dev/zprestige/prestige/e_	b	([Ljava/lang/Object;)Ldev/zprestige/prestige/dR;	getDescriptionMode
+M	dev/zprestige/prestige/e_	b	([Ljava/lang/Object;)Ldev/zprestige/prestige/dM;	getRounded
+M	dev/zprestige/prestige/e_	b	([Ljava/lang/Object;)Ldev/zprestige/prestige/dN;	getMenuColor
+F	dev/zprestige/prestige/bO	a	Ljava/util/Map;	listeners
+F	dev/zprestige/prestige/bO	b	Ljava/lang/Object;	lock
+M	dev/zprestige/prestige/bO	a	([Ljava/lang/Object;)V	register
+M	dev/zprestige/prestige/bO	b	([Ljava/lang/Object;)V	unregister
+M	dev/zprestige/prestige/bO	a	([Ljava/lang/Object;)Z	post
+M	dev/zprestige/prestige/bO	b	([Ljava/lang/Object;)Z	hasListeners
+M	dev/zprestige/prestige/bO	c	([Ljava/lang/Object;)Z	hasListenerOfType
+F	dev/zprestige/prestige/cy	a	Ljava/lang/reflect/Method;	method
+F	dev/zprestige/prestige/cy	b	Ljava/lang/Object;	target
+F	dev/zprestige/prestige/cy	c	Ljava/lang/Class;	eventType
+F	dev/zprestige/prestige/cy	d	Ljava/lang/invoke/MethodHandle;	handle
+F	dev/zprestige/prestige/client/Prestige	b	Ldev/zprestige/prestige/bO;	eventBus
+F	dev/zprestige/prestige/client/Prestige	d	Ldev/zprestige/prestige/cJ;	moduleManager
+# --- modules (generated by client/tools/gen_module_mapping.py from docs/manifest_live.obf.json) ---
+C	dev/zprestige/prestige/dW			dev/zprestige/prestige/module/combat/AimAssist
+C	dev/zprestige/prestige/dX			dev/zprestige/prestige/module/visual/Ambience
+C	dev/zprestige/prestige/dY			dev/zprestige/prestige/module/combat/AnchorExploder
+C	dev/zprestige/prestige/dZ			dev/zprestige/prestige/module/combat/AnchorMacro
+C	dev/zprestige/prestige/d0			dev/zprestige/prestige/module/combat/AnchorPearlCatch
+C	dev/zprestige/prestige/d1			dev/zprestige/prestige/module/combat/AnchorPlacer
+C	dev/zprestige/prestige/d2			dev/zprestige/prestige/module/visual/Animations
+C	dev/zprestige/prestige/d3			dev/zprestige/prestige/module/combat/AntiAction
+C	dev/zprestige/prestige/d4			dev/zprestige/prestige/module/combat/AntiBot
+C	dev/zprestige/prestige/d5			dev/zprestige/prestige/module/visual/AntiResourcePack
+C	dev/zprestige/prestige/d6			dev/zprestige/prestige/module/misc/AntiTrap
+C	dev/zprestige/prestige/d7			dev/zprestige/prestige/module/combat/AntiWeb
+C	dev/zprestige/prestige/d8			dev/zprestige/prestige/module/combat/AutoAnchor
+C	dev/zprestige/prestige/d9			dev/zprestige/prestige/module/misc/AutoArmor
+C	dev/zprestige/prestige/d_			dev/zprestige/prestige/module/combat/AutoCart
+C	dev/zprestige/prestige/ea			dev/zprestige/prestige/module/misc/AutoClicker
+C	dev/zprestige/prestige/eb			dev/zprestige/prestige/module/combat/AutoCrystal
+C	dev/zprestige/prestige/ec			dev/zprestige/prestige/module/combat/AutoDrain
+C	dev/zprestige/prestige/ed			dev/zprestige/prestige/module/combat/AutoElytra
+C	dev/zprestige/prestige/ee			dev/zprestige/prestige/module/combat/AutoHitCrystal
+C	dev/zprestige/prestige/ef			dev/zprestige/prestige/module/movement/AutoJumpReset
+C	dev/zprestige/prestige/eg			dev/zprestige/prestige/module/misc/AutoLoot
+C	dev/zprestige/prestige/eh			dev/zprestige/prestige/module/mace/AutoMace
+C	dev/zprestige/prestige/ei			dev/zprestige/prestige/module/combat/AutoObbyCrystal
+C	dev/zprestige/prestige/ej			dev/zprestige/prestige/module/mace/AutoPearlCatch
+C	dev/zprestige/prestige/ek			dev/zprestige/prestige/module/misc/AutoPickaxe
+C	dev/zprestige/prestige/el			dev/zprestige/prestige/module/misc/AutoPot
+C	dev/zprestige/prestige/em			dev/zprestige/prestige/module/mace/AutoReMace
+C	dev/zprestige/prestige/en			dev/zprestige/prestige/module/combat/AutoSafeCart
+C	dev/zprestige/prestige/eo			dev/zprestige/prestige/module/combat/AutoShield
+C	dev/zprestige/prestige/ep			dev/zprestige/prestige/module/combat/AutoShieldBreaker
+C	dev/zprestige/prestige/eq			dev/zprestige/prestige/module/movement/AutoShortPearl
+C	dev/zprestige/prestige/er			dev/zprestige/prestige/module/misc/AutoText
+C	dev/zprestige/prestige/es			dev/zprestige/prestige/module/misc/AutoTool
+C	dev/zprestige/prestige/et			dev/zprestige/prestige/module/combat/AutoTotem
+C	dev/zprestige/prestige/eu			dev/zprestige/prestige/module/combat/Backtrack
+C	dev/zprestige/prestige/ev			dev/zprestige/prestige/module/mace/BreachSwap
+C	dev/zprestige/prestige/ew			dev/zprestige/prestige/module/combat/CartAura
+C	dev/zprestige/prestige/ex			dev/zprestige/prestige/module/combat/CartPearlCatch
+C	dev/zprestige/prestige/ey			dev/zprestige/prestige/module/misc/CartRefill
+C	dev/zprestige/prestige/ez			dev/zprestige/prestige/module/misc/CartStealer
+C	dev/zprestige/prestige/eA			dev/zprestige/prestige/module/misc/ChestStealer
+C	dev/zprestige/prestige/eB			dev/zprestige/prestige/module/combat/CobwebPlacer
+C	dev/zprestige/prestige/eC			dev/zprestige/prestige/module/misc/Criticals
+C	dev/zprestige/prestige/eD			dev/zprestige/prestige/module/misc/CrystalOptimizer
+C	dev/zprestige/prestige/eE			dev/zprestige/prestige/module/mace/DiagonalPearlCatch
+C	dev/zprestige/prestige/eF			dev/zprestige/prestige/module/combat/DoubleAnchor
+C	dev/zprestige/prestige/eG			dev/zprestige/prestige/module/visual/ESP
+C	dev/zprestige/prestige/eH			dev/zprestige/prestige/module/mace/ElytraWindCharge
+C	dev/zprestige/prestige/eI			dev/zprestige/prestige/module/misc/EnemyFaker
+C	dev/zprestige/prestige/eJ			dev/zprestige/prestige/module/spear/ExtendedReach
+C	dev/zprestige/prestige/eK			dev/zprestige/prestige/module/movement/FakeLag
+C	dev/zprestige/prestige/eL			dev/zprestige/prestige/module/movement/FastBridge
+C	dev/zprestige/prestige/eM			dev/zprestige/prestige/module/misc/FastEXP
+C	dev/zprestige/prestige/eN			dev/zprestige/prestige/module/mace/FastPearlCatch
+C	dev/zprestige/prestige/eO			dev/zprestige/prestige/module/misc/FastPlace
+C	dev/zprestige/prestige/eP			dev/zprestige/prestige/module/visual/FreeLook
+C	dev/zprestige/prestige/eQ			dev/zprestige/prestige/module/movement/Freecam
+C	dev/zprestige/prestige/eR			dev/zprestige/prestige/module/misc/Friends
+C	dev/zprestige/prestige/eS			dev/zprestige/prestige/module/combat/GhostPlace
+C	dev/zprestige/prestige/eT			dev/zprestige/prestige/module/visual/HealthIndicators
+C	dev/zprestige/prestige/eU			dev/zprestige/prestige/module/visual/HitEffect
+C	dev/zprestige/prestige/eV			dev/zprestige/prestige/module/combat/HitFix
+C	dev/zprestige/prestige/eW			dev/zprestige/prestige/module/combat/HitFlick
+C	dev/zprestige/prestige/eX			dev/zprestige/prestige/module/combat/Hitboxes
+C	dev/zprestige/prestige/eY			dev/zprestige/prestige/module/visual/HudEditor
+C	dev/zprestige/prestige/eZ			dev/zprestige/prestige/module/combat/InstantCrossbow
+C	dev/zprestige/prestige/e0			dev/zprestige/prestige/module/spear/InstantLunge
+C	dev/zprestige/prestige/e1			dev/zprestige/prestige/module/combat/InstantShield
+C	dev/zprestige/prestige/e2			dev/zprestige/prestige/module/visual/ItemESP
+C	dev/zprestige/prestige/e3			dev/zprestige/prestige/module/visual/JumpCircles
+C	dev/zprestige/prestige/e4			dev/zprestige/prestige/module/combat/KeepSprint
+C	dev/zprestige/prestige/e5			dev/zprestige/prestige/module/misc/KeyPearl
+C	dev/zprestige/prestige/e6			dev/zprestige/prestige/module/mace/KeyWindCharge
+C	dev/zprestige/prestige/e7			dev/zprestige/prestige/module/combat/KillAura
+C	dev/zprestige/prestige/e8			dev/zprestige/prestige/module/mace/MacePot
+C	dev/zprestige/prestige/e9			dev/zprestige/prestige/module/mace/MacePrediction
+C	dev/zprestige/prestige/fa			dev/zprestige/prestige/module/misc/MiddleClickFriend
+C	dev/zprestige/prestige/fb			dev/zprestige/prestige/module/misc/NameHider
+C	dev/zprestige/prestige/fc			dev/zprestige/prestige/module/visual/NameTags
+C	dev/zprestige/prestige/fd			dev/zprestige/prestige/module/visual/NoBounce
+C	dev/zprestige/prestige/fe			dev/zprestige/prestige/module/movement/NoJumpDelay
+C	dev/zprestige/prestige/ff			dev/zprestige/prestige/module/combat/NoMissDelay
+C	dev/zprestige/prestige/fg			dev/zprestige/prestige/module/visual/OreSimulation
+C	dev/zprestige/prestige/fh			dev/zprestige/prestige/module/movement/Parkour
+C	dev/zprestige/prestige/fi			dev/zprestige/prestige/module/combat/PearlFollow
+C	dev/zprestige/prestige/fj			dev/zprestige/prestige/module/visual/PearlTrajectory
+C	dev/zprestige/prestige/fk			dev/zprestige/prestige/module/mace/PearlWindCharge
+C	dev/zprestige/prestige/fl			dev/zprestige/prestige/module/misc/PotionRefill
+C	dev/zprestige/prestige/fm			dev/zprestige/prestige/module/combat/PredictDoubleHand
+C	dev/zprestige/prestige/fn			dev/zprestige/prestige/module/misc/Reach
+C	dev/zprestige/prestige/fo			dev/zprestige/prestige/module/misc/Refill
+C	dev/zprestige/prestige/fp			dev/zprestige/prestige/module/visual/RenderOptimizer
+C	dev/zprestige/prestige/fq			dev/zprestige/prestige/module/misc/RightClicker
+C	dev/zprestige/prestige/fr			dev/zprestige/prestige/module/combat/SafeAnchor
+C	dev/zprestige/prestige/fs			dev/zprestige/prestige/module/misc/SelfDestruct
+C	dev/zprestige/prestige/ft			dev/zprestige/prestige/module/mace/ShieldDrain
+C	dev/zprestige/prestige/fu			dev/zprestige/prestige/module/visual/ShieldRenderer
+C	dev/zprestige/prestige/fv			dev/zprestige/prestige/module/movement/ShortPearl
+C	dev/zprestige/prestige/fw			dev/zprestige/prestige/module/mace/ShortWindCharge
+C	dev/zprestige/prestige/fx			dev/zprestige/prestige/module/combat/SilentAim
+C	dev/zprestige/prestige/fy			dev/zprestige/prestige/module/spear/SpearDamageIndicator
+C	dev/zprestige/prestige/fz			dev/zprestige/prestige/module/spear/SpearMaceDoubleTap
+C	dev/zprestige/prestige/fA			dev/zprestige/prestige/module/movement/Sprint
+C	dev/zprestige/prestige/fB			dev/zprestige/prestige/module/visual/StorageESP
+C	dev/zprestige/prestige/fC			dev/zprestige/prestige/module/misc/StreamerMode
+C	dev/zprestige/prestige/fD			dev/zprestige/prestige/module/combat/SwapHit
+C	dev/zprestige/prestige/fE			dev/zprestige/prestige/module/visual/TargetRenderer
+C	dev/zprestige/prestige/fF			dev/zprestige/prestige/module/misc/Teams
+C	dev/zprestige/prestige/fG			dev/zprestige/prestige/module/visual/TotemAnimation
+C	dev/zprestige/prestige/fH			dev/zprestige/prestige/module/combat/TotemHit
+C	dev/zprestige/prestige/fI			dev/zprestige/prestige/module/visual/Trails
+C	dev/zprestige/prestige/fJ			dev/zprestige/prestige/module/visual/Trajectories
+C	dev/zprestige/prestige/fK			dev/zprestige/prestige/module/combat/Triggerbot
+C	dev/zprestige/prestige/fL			dev/zprestige/prestige/module/visual/TwoDESP
+C	dev/zprestige/prestige/fM			dev/zprestige/prestige/module/movement/Velocity
+C	dev/zprestige/prestige/fN			dev/zprestige/prestige/module/movement/WTap
+C	dev/zprestige/prestige/fO			dev/zprestige/prestige/module/visual/Weather
+C	dev/zprestige/prestige/fP			dev/zprestige/prestige/module/mace/WindChargeAura
+C	dev/zprestige/prestige/fQ			dev/zprestige/prestige/module/visual/XRay
+C	dev/zprestige/prestige/fR			dev/zprestige/prestige/module/combat/XbowCart

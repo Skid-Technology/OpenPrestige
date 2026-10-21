@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "prestige",
+  "version": "${version}",
+  "name": "Prestige",
+  "description": "Prestige client with the imgui-java ClickGUI.",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["dev.zprestige.prestige.client.Prestige"],
+    "client": ["dev.zprestige.prestige.ui.mc.Entry", "dev.zprestige.prestige.engine.EngineDev"]
+  },
+  "mixins": ["prestige-engine.mixins.json", "prestige.mixins.json"],
+  "accessWidener": "prestige-client.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,15 @@
+.gradle/
+build/
+run/
+out/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.log
+hs_err_pid*
+# reverse-engineering scratch (pipeline tools, large intermediates)
+/reverse/
+/client/
+/logs/

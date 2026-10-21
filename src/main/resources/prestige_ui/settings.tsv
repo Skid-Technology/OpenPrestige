@@ -1,0 +1,686 @@
+Aim Assist	dR	Mode	Aims at players or end crystals.	Players	[Players,Crystals]			
+Aim Assist	dR	Target	Closest = nearest; Crosshair = smallest angle to aim; Lowest HP/Armor = weakest player.	Closest	[Closest,Crosshair,Lowest HP,Lowest Armor]			
+Aim Assist	dO	Fov	Considers targets within this view angle (degrees). 360 = full sphere, allowing flicks behind you.	90.0	0.1	360.0		
+Aim Assist	dO	Range	Considers targets within this distance (blocks).	5.0	0.0	10.0		
+Aim Assist	dM	Sticky Targeting	Keeps the current target until it dies or leaves range.	true				
+Aim Assist	dM	Through Walls	Allows targets hidden behind blocks.	false				
+Aim Assist	dM	Only On Rotate	Assists only while you are moving the mouse.	true				
+Aim Assist	dM	Stop On Block Break	Pauses while you are mining a block.	true				
+Aim Assist	dM	Weapon Only	Assists only while holding a sword or axe.	false				
+Aim Assist	dM	Crystal Only	Assists only while holding an end crystal.	false				
+Aim Assist	dM	Require Left Click	Assists only while left click is held.	false				
+Aim Assist	dM	Require Right Click	Assists only while right click is held.	false				
+Aim Assist	dO	Reaction Delay	Waits this long after acquiring a target before aiming (ms).	0.0	0.0	500.0		
+Aim Assist	dO	Speed	Sets how fast the aim pulls to the target. Higher = snappier.	50.0	0.1	100.0		
+Aim Assist	dO	Randomness	Adds per-frame jitter so the aim never moves dead straight.	70.0	0.1	100.0		
+Aim Assist	dM	Smoothen	Replaces speed-based aim with a smoothness curve; glides instead of snapping.	false				
+Aim Assist	dO	Smoothness	Sets how buttery the glide is. 100 = very slow drift.	75.0	0.0	100.0		
+Aim Assist	dM	Predict Movement	Leads moving players by their velocity.	true				
+Aim Assist	dO	Predict Multiply	Multiplies the lead. 1 = exact velocity; higher offsets ping (x).	1.0	1.0	4.0		
+Aim Assist	dM	Vertical Only	Corrects pitch only for crystals; yaw stays yours.	false				
+Aim Assist	dM	Stop On Hitbox	Freezes correction once your crosshair is on the hitbox.	true				
+Ambience	dM	Fog	Overrides vanilla fog with custom distances and color.	true				
+Ambience	dO	Start	Starts fog at this distance (blocks).	90.0	0.0	200.0		
+Ambience	dO	End	Reaches full fog at this distance (blocks).	150.0	0.0	200.0		
+Ambience	dN	Color	Sets the fog color.	java.awt.Color[r=255,g=255,b=255]				
+Ambience	dM	Cover Horizon Band	Hides the bright horizon strip by matching the sky cutoff to fog end.	true				
+Ambience	dM	Sky	Overrides the upper sky color.	false				
+Ambience	dN	Sky Color	Sets the sky dome color.	java.awt.Color[r=135,g=206,b=235]				
+Ambience	dM	Custom Time	Overrides the visual time of day.	true				
+Ambience	dP	Time	Sets the visual time of day (ticks, 0–24000).	6000	0	24000		
+Anchor Exploder	dM	Only Own Anchors	Touches only anchors you placed.	true				
+Anchor Exploder	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Anchor Exploder	dM	Glowstone	Charges anchors with glowstone before exploding.	true				
+Anchor Exploder	dR	Glowstone Swap	None uses the held item; Swap switches hotbar.	Swap	[None,Swap]			
+Anchor Exploder	dM	Glowstone Swap Back	Returns to the previous slot after charging.	false				
+Anchor Exploder	dM	Explode	Explodes charged anchors.	true				
+Anchor Exploder	dR	Explode Swap	None uses the held item; Swap switches hotbar.	Swap	[None,Swap]			
+Anchor Exploder	dP	Explode Slot	Holds this hotbar slot while exploding (put a totem here).	8	1	9		
+Anchor Exploder	dM	Explode Swap Back	Returns to the previous slot after exploding.	false				
+Anchor Exploder	dM	Explode Damage Tick	Explodes only when the enemy can take damage.	true				
+Anchor Exploder	dM	Disable After Explode	Turns the module off after an explode.	false				
+Anchor Exploder	dS	Silent Aim	Aims server-side when charging and exploding; your camera never moves.		[Glowstone,Explode]	[false,false]	{Glowstone=0, Explode=1}	
+Anchor Exploder	dO	Silent Aim FOV	Caps silent aim at this yaw offset (degrees).	180.0	0.0	180.0		
+Anchor Macro	dM	Only Own Anchors	Touches only anchors you placed.	false				
+Anchor Macro	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Anchor Macro	dM	Place	Places anchors at your crosshair.	true				
+Anchor Macro	dL	Place Bind	Press to place an anchor at the crosshair.	-1	false			
+Anchor Macro	dR	Place Swap	None uses the held item; Swap switches hotbar; Silent swaps server-side.	None	[None,Swap,Silent]			
+Anchor Macro	dM	Place Swap Back	Returns to the previous slot after placing.	true				
+Anchor Macro	dM	Glowstone	Charges anchors with glowstone.	true				
+Anchor Macro	dR	Glowstone Swap	None uses the held item; Swap switches hotbar; Silent swaps server-side.	None	[None,Swap,Silent]			
+Anchor Macro	dM	Glowstone Swap Back	Returns to the previous slot after charging.	true				
+Anchor Macro	dM	Only On Place Bind	Charges only anchors placed with Place Bind.	false				
+Anchor Macro	dM	Explode	Explodes charged anchors.	true				
+Anchor Macro	dR	Explode Swap	None uses the held item; Swap switches hotbar; Silent swaps server-side.	None	[None,Swap,Silent]			
+Anchor Macro	dP	Explode Slot	Holds this hotbar slot while exploding (put a totem here).	1	1	9		
+Anchor Macro	dM	Explode Swap Back	Returns to the previous slot after exploding.	true				
+Anchor Pearl Catch	dO	Scan Range	Only tracks enemy pearls thrown within this distance (blocks).	48.0	16.0	96.0		
+Anchor Pearl Catch	dO	Min Damage	Only catches pearls whose landing the anchor can hit for at least this predicted damage (pre-armor HP).	15.0	0.0	40.0		
+Anchor Pearl Catch	dO	Max Self Damage	Skips catches whose self-damage would exceed this (HP, armor-aware).	10.0	0.0	36.0		
+Anchor Pearl Catch	dM	Anti Suicide	Never detonates if the blast could kill you.	true				
+Anchor Pearl Catch	dM	Damage Tick	Detonates only when the target can actually take damage (no i-frames).	true				
+Anchor Pearl Catch	dM	Safe Anchor	Places a cover block before charging to cut the self-damage.	true				
+Anchor Pearl Catch	dR	Safe Block	Block to place as the blast cover.	Glowstone	[Glowstone,Obsidian]			
+Anchor Pearl Catch	dM	Rotate Silently	Aims server-side via RotationManager; your camera never moves.	true				
+Anchor Pearl Catch	dO	Silent Aim FOV	Caps silent aim at this yaw offset (degrees).	180.0	0.0	180.0		
+Anchor Pearl Catch	dM	Swap Back	Returns to your previous slot after the catch finishes.	true				
+Anchor Pearl Catch	dQ	Place Delay	Random ms between the anchor place and the safe-cover step.	0.0	0.0	500.0	0.0	40.0
+Anchor Pearl Catch	dQ	Charge Delay	Random ms between anchor place/cover and the glowstone charge.	20.0	0.0	500.0	20.0	60.0
+Anchor Pearl Catch	dQ	Detonate Delay	Random ms after they land before the detonate click.	40.0	0.0	500.0	40.0	120.0
+Anchor Pearl Catch	dM	Render	Draws the landing spot, the anchor, and the cover, plus a landing-ETA tag.	true				
+Anchor Pearl Catch	dN	Anchor Color	Color for the anchor position.	java.awt.Color[r=255,g=90,b=60]				
+Anchor Pearl Catch	dN	Safe Color	Color for the safe-cover position.	java.awt.Color[r=255,g=220,b=90]				
+Anchor Pearl Catch	dN	Landing Color	Color for the predicted pearl landing.	java.awt.Color[r=80,g=170,b=255]				
+Anchor Placer	dR	Fire Mode	One-Shot auto-disables after each action; Persistent never auto-disables (use a hold-bind on the module itself for hold-to-fire).	One-Shot	[One-Shot,Persistent]			
+Anchor Placer	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Anchor Placer	dR	Swap	None uses the held item; Swap switches hotbar.	Swap	[None,Swap]			
+Anchor Placer	dM	Swap Back	Returns to the previous slot after placing.	false				
+Anchor Placer	dM	Silent Aim	Aims at placement spots server-side; your camera never moves.	false				
+Anchor Placer	dO	Silent Aim FOV	Caps silent aim at this yaw offset (degrees).	180.0	0.0	180.0		
+Animations	dP	Mode	Selects the swing animation style (1–3).	1	1	3		
+Animations	dM	Slow	Slows the swing animation down.	true				
+Anti Action	dM	Double Glowstone	Blocks double-filling an anchor with glowstone.	true				
+Anti Action	dM	Open E-Chest	Blocks opening an ender chest while holding combat items.	true				
+Anti Action	dM	Place Glowstone	Blocks placing glowstone anywhere but an anchor.	true				
+Anti Action	dM	Ground Firework	Blocks firing a firework rocket while not gliding on elytra. Skipped if a crossbow is in your offhand.	true				
+Anti Action	dM	Sword Shield	Blocks hitting a shield with a sword.	true				
+Anti Bot	dS	Mode	Detects bots by packet order, UUID version, tab-list presence, and sustained zero-ping.		[Packet,UUID,TabList,Ping]	[true,true,true,true]	{Packet=0, TabList=2, UUID=1, Ping=3}	
+Anti Bot	dP	Validation Threshold	Requires this many EntityPositionS2CPackets from a player before whitelisting them. 1 = current single-packet trust; 2–3 hardens against crafted single-packet Grim bypasses at the cost of a slightly longer trust window.	1	1	5		
+Anti Bot	dP	Tab-List Grace	Waits this long (ms) after a player spawns before rejecting them for missing a tab-list entry — avoids flagging legit players for the one tick between spawn and tab-list packets.	500	0	2000		
+Anti Bot	dP	Ping Grace	Requires a player to hold latency == 0 for at least this long (ms) before flagging as a bot. One server keepalive cycle is enough for a real client to reply.	3000	0	10000		
+AntiTrap	dS	Entities	Hides these entity types; armor stands and carts are the TPA-trap staples.		[Armor Stands,Minecarts,Item Frames,Boats,End Crystals]	[true,true,false,false,false]	{Boats=3, Minecarts=1, End Crystals=4, Armor Stands=0, Item Frames=2}	
+AntiTrap	dO	Range	Affects entities within this distance (blocks).	128.0	0.0	256.0		
+AntiTrap	dM	Cancel Spawn Packets	Drops spawn packets so trap entities never load.	true				
+AntiTrap	dM	Discard Existing	Removes already-loaded matching entities every tick.	true				
+AntiTrap	dM	Anti Sign	Blocks the sign-edit screen from opening so a sign placed in your face can't trap you.	true				
+Anti Web	dR	Mode	Legit is a triggerbot: you aim at the web yourself and it places/scoops automatically. Blatant needs no aiming and runs fully automatic.	Legit	[Legit,Blatant]			
+Anti Web	dQ	Delay	Waits a random time in this range between actions (ms).	40.0	0.0	600.0	40.0	90.0
+Anti Web	dR	Swap	None uses the held water bucket; Normal switches hotbar.	Normal	[None,Normal]			
+Anti Web	dM	Swap Back	Returns to your previous slot after escaping.	true				
+Anti Web	dM	Partial Webs	Also triggers when your hitbox only clips the edge of a web (block-boundary straddle), not just when you're fully in it.	true				
+Auto Anchor	dO	Target Range	Acquires the nearest valid player within this radius.	10.0	1.0	16.0		
+Auto Anchor	dO	Min Damage	Skips candidates dealing less than this to the target.	6.0	0.0	36.0		
+Auto Anchor	dO	Max Self Damage	Skips candidates dealing more than this to you.	10.0	0.0	36.0		
+Auto Anchor	dM	Anti Suicide	Never detonates if self damage would kill you.	true				
+Auto Anchor	dM	Safe Anchor	Places a cover block to reduce self-damage before charging.	true				
+Auto Anchor	dR	Safe Block	Block to place as the blast cover.	Glowstone	[Glowstone,Obsidian]			
+Auto Anchor	dM	Rotate Silently	Server-side rotations via RotationManager; camera never moves.	true				
+Auto Anchor	dM	Swap Back	Returns to the previous slot after the sequence idles.	true				
+Auto Anchor	dQ	Place Delay	Random ms between the anchor place and the safe-cover step.	0.0	0.0	500.0	0.0	40.0
+Auto Anchor	dQ	Charge Delay	Random ms between anchor place/cover and glowstone charge.	20.0	0.0	500.0	20.0	60.0
+Auto Anchor	dQ	Detonate Delay	Random ms between charge and detonate.	20.0	0.0	500.0	20.0	60.0
+Auto Anchor	dM	Only Existing	Never place anchors — only detonate existing ones.	false				
+Auto Anchor	dM	Render	Draw boxes for target + candidate.	true				
+Auto Anchor	dN	Anchor Color	Color for the picked anchor position.	java.awt.Color[r=255,g=90,b=60]				
+Auto Anchor	dN	Safe Color	Color for the safe-cover position.	java.awt.Color[r=255,g=220,b=90]				
+Auto Anchor	dN	Target Color	Color for the target highlight.	java.awt.Color[r=255,g=80,b=80]				
+Auto Armor	dR	Mode	Always swaps anytime; Inventory only in the screen; Keybind only on key.	Always	[Always,Inventory,Keybind]			
+Auto Armor	dL	Key	Hold to allow armor swaps (Keybind mode).	-1	false			
+Auto Armor	dM	Avoid Cursed	Skips armor with Curse of Binding or Vanishing.	true				
+Auto Armor	dP	Delay	Waits at least this long between swaps (ms).	100	0	1000		
+Auto Cart	dP	Switch Delay	Waits this many ticks between rail, cart, and weapon steps.	2	0	20		
+Auto Cart	dP	Bow Back Delay	Waits this many ticks before swapping back after a post-shot placement.	0	0	20		
+Auto Cart	dP	Min Charge	Charges the bow this many ticks before the trigger releases. 20 = full.	1	1	20		
+Auto Cart	dP	Arc	Shot curvature for trigger shots: 0 = flattest arc that reaches, 100 = highest lob. Only picks among arcs that still land on the target.	20	0	100		
+Auto Cart	dL	Trigger Bind	Press to place rail and cart, then fire your bow or crossbow.	-1	false			
+Auto Cart	dP	Overload	Stacks this many TNT carts on the rail when Overload Bind is used. 1 = off.	1	1	4		
+Auto Cart	dL	Overload Bind	Press to fire toward your aim, then stack the carts at the predicted landing while the arrow is airborne. Or HOLD it while pressing Trigger Bind / while shooting to stack that placement.	-1	false			
+Auto Cart	dQ	Overload Delay	Random wait in this range (ms) between stacked carts. Re-rolled per cart. Raise if your server flags fast placements.	50.0	0.0	1000.0	50.0	150.0
+Auto Cart	dM	Overload Hotbar Only	Stacks only from the hotbar; never pulls carts from your main inventory mid-stack.	false				
+Auto Cart	dR	Place Mode	Trajectory places at the predicted arrow landing; Crosshair places at your aim.	Trajectory	[Trajectory,Crosshair]			
+Auto Cart	dM	On Bow Shot	Places rail and cart at the predicted landing after you shoot.	true				
+Auto Cart	dM	Auto Hit Placed	Aims at the nearest placed cart and releases at the perfect moment.	true				
+Auto Cart	dO	Auto Hit Range	Scans for placed TNT carts within this distance (blocks).	24.0	5.0	50.0		
+Auto Cart	dP	Auto Hit Min Charge	Requires this bow charge before auto-release (ticks). 20 = full.	20	10	20		
+Auto Cart	dM	Switch Back To Bow	Returns to the bow slot after a passive placement.	true				
+Auto Cart	dM	Safe Blocks	Places a block between you and the cart to soak damage.	true				
+Auto Cart	dM	Silent Aim	Aims at the landing block server-side; your camera never moves.	true				
+Auto Cart	dO	Silent Aim FOV	Caps silent aim at this yaw offset per tick (degrees).	180.0	0.0	180.0		
+Auto Cart	dM	Render Path	Highlights the predicted landing block while a bow is drawn.	true				
+Auto Cart	dN	Render Color	Sets the landing highlight color.	java.awt.Color[r=131,g=118,b=252]				
+Auto Clicker	dR	Mode	Ghost clicks humanized; Interval clicks at a fixed rate for farms.	Ghost	[Ghost,Interval]			
+Auto Clicker	dR	Click	Clicks the left or right mouse button (Interval mode only; Ghost is always left).	Left	[Left,Right]			
+Auto Clicker	dP	Interval	Waits this long between clicks (ms).	100	0	10000		
+Auto Clicker	dO	Min CPS	Lowest clicks per second in Ghost mode.	5.0	0.0	25.0		
+Auto Clicker	dO	Max CPS	Highest clicks per second in Ghost mode.	15.0	0.0	25.0		
+Auto Clicker	dM	Stop On Block	Stops clicking while looking at a block.	false				
+Auto Clicker	dM	Weapon Only	Only clicks while holding a sword or axe.	false				
+Auto Clicker	dO	Reaction Time	Average delay before the first click on a new target (ms). 0 = instant.	170.0	0.0	400.0		
+Auto Clicker	dO	Reaction Jitter	Random spread applied to the reaction delay (ms).	25.0	0.0	100.0		
+Auto Crystal	dM	In Air	Keeps placing while airborne instead of timing out.	false				
+Auto Crystal	dM	Damage Tick	Breaks crystals only when they deal damage.	false				
+Auto Crystal	dM	Pause On Kill	Pauses while a dead body is nearby.	false				
+Auto Crystal	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	130.0
+Auto Crystal	dM	Switch	Switches to crystals when the module enables.	false				
+Auto Crystal	dM	Head Bob	Updates your pitch server-side (aimed at the hitbox's nearest point) to break crystals above or below.	false				
+Auto Crystal	dM	Render	Outlines the crystal being targeted.	true				
+Auto Crystal	dN	Color	Sets the crystal outline color.	java.awt.Color[r=131,g=118,b=252]				
+Auto Crystal	dM	Always Break Last	When disabled, finishes breaking the crystal under your crosshair before turning off.	true				
+Auto Drain	dR	Mode	Legit drains your crosshair target; Silent Aim finds nearby liquid itself.	Legit	[Legit,Silent Aim]			
+Auto Drain	dS	Liquid	Drains these liquid types.		[Water,Lava,Water On Web,Lava On Web]	[true,true,true,true]	{Water=0, Lava On Web=3, Lava=1, Water On Web=2}	
+Auto Drain	dQ	Delay	Waits a random time in this range between actions (ms).	50.0	0.0	600.0	50.0	100.0
+Auto Drain	dR	Swap	Switches to an empty bucket when targeting liquid.	None	[None,Normal]			
+Auto Drain	dM	Fallback to Cobweb	Places cobweb on the liquid when no empty bucket is left.	true				
+Auto Drain	dM	Interact	Scoops the liquid automatically after swapping.	true				
+Auto Drain	dM	Swap Back	Returns to the previous slot after collecting.	true				
+Auto Drain	dO	Silent Aim FOV	Caps silent aim at this yaw offset (degrees).	180.0	0.0	180.0		
+Auto Elytra	dM	Require Land	Arms only while you are on the ground.	true				
+Auto Elytra	dQ	Delay	Waits a random time in this range between actions (ms).	50.0	0.0	300.0	50.0	100.0
+Auto Elytra	dM	Firework	Boosts with fireworks after takeoff.	true				
+Auto Elytra	dM	Auto Disable	Turns the module off after a set flight time.	true				
+Auto Elytra	dO	Fly Time	Flies this long before turning off (ms).	300.0	0.0	1000.0		
+Auto Elytra	dM	Silent Inventory	Equips without opening your inventory screen.	false				
+Auto Elytra	dM	Auto Jump	Jumps to start the glide.	false				
+Auto Elytra	dM	Firework on Space	Fires a firework rocket when you press Space while gliding.	false				
+Auto Elytra	dQ	Space Cooldown	Random ms between space-triggered rockets. Prevents Grim rapid-interact flags at very low values.	400.0	0.0	3000.0	400.0	600.0
+Auto Hit Crystal	dM	Stop In Air	Pauses while you are airborne.	false				
+Auto Hit Crystal	dM	Sword Only	Runs only while holding a sword.	false				
+Auto Hit Crystal	dM	Pause On Kill	Pauses while a dead body is nearby.	false				
+Auto Hit Crystal	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Auto Hit Crystal	dM	Perfect Timing	Syncs crystal breaks to the enemy's damage ticks.	false				
+Auto Hit Crystal	dR	Crystal	Places one crystal, two, none, or keeps placing (Infinite).	Single Tap	[None,Single Tap,Double Tap,Infinite]			
+Auto Hit Crystal	dQ	Crystal Delay	Waits a random time in this range between crystal placements (ms).	50.0	0.0	200.0	50.0	150.0
+Auto Hit Crystal	dM	Silent Rotations	Attacks crystals with server-side rotations; your camera never moves.	false				
+Auto Jump Reset	dO	Chance	Rolls this chance on each knockback jump-reset (%).	50.0	0.0	100.0		
+Auto Loot	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	300.0	30.0	50.0
+Auto Loot	dP	Min Totems	Keeps this many totems and drops the rest.	1	1	20		
+Auto Loot	dP	Min Pearls	Keeps this many pearl stacks and drops the rest.	5	1	10		
+Auto Loot	dL	Key	Press to run the loot routine.	-1	false			
+Auto Mace	dO	Horizontal Target Dist	Swaps only with a target within this horizontal distance (blocks).	5.0	0.0	6.0		
+Auto Mace	dO	Min Fall Distance	Swaps to the mace only after falling this far (blocks).	10.0	0.0	100.0		
+Auto Mace	dM	Stun Slam	Hits with the axe to stun, then maces.	false				
+Auto Mace	dR	Stun Slam Mode	Chance fires on a random roll; Hold Key fires only while the bind is held.	Chance	[Chance,Hold Key]			
+Auto Mace	dL	Stun Slam Bind	Hold to allow stun slams (Hold Key mode).	-1	false			
+Auto Mace	dO	Chance	Rolls this chance on each stun slam (%).	100.0	0.0	100.0		
+Auto Mace	dM	Scale With Fall	Scales the chance with fall distance; big drops fire more often.	false				
+Auto Mace	dO	Stun Min Fall	Stun-slams only after falling this far (blocks). 0 = module minimum.	0.0	0.0	100.0		
+Auto Mace	dP	Axe Hold Delay	Holds the axe visibly this many ticks before hitting. 2–4 reads as legit.	0	0	10		
+Auto Mace	dM	Breach Check	Swaps to Breach instead of Density on low fall distance.	false				
+Auto Mace	dM	Trigger	Attacks with the mace automatically.	true				
+Auto Mace	dM	Silent Aim	Aims at the target server-side; your camera never moves.	false				
+Auto Mace	dO	Max Yaw	Caps silent aim at this yaw offset from your view (degrees).	180.0	0.0	180.0		
+Auto Mace	dM	Takeoff Elytra	Unequips the elytra when diving on a maceable target.	false				
+Auto Mace	dM	Swap Back	Returns to the previous slot after the mace hit lands.	false				
+Auto Mace	dP	Swap Back Delay	Waits this long after the hit before swapping back (ms).	50	0	500		
+Auto Mace	dM	Expand Hitbox	Grows the target hitbox for the hit. Easier hits, higher flag risk.	false				
+Auto Mace	dO	Hitbox Expansion	Expands the target hitbox by this amount (blocks).	0.5	0.0	5.0		
+Auto Obby Crystal	dO	Target Range	Acquires the nearest valid player within this radius.	10.0	1.0	16.0		
+Auto Obby Crystal	dO	Min Damage	Skips candidates dealing less than this to the target.	6.0	0.0	36.0		
+Auto Obby Crystal	dO	Max Self Damage	Skips candidates dealing more than this to you.	8.0	0.0	36.0		
+Auto Obby Crystal	dM	Anti Suicide	Never places if self damage would kill you (health+absorption).	true				
+Auto Obby Crystal	dR	Break Mode	Manual never attacks; Attack uses the current slot; SwapAttack swaps to Swap Back Slot first.	Attack	[Manual,Attack,SwapAttack]			
+Auto Obby Crystal	dM	Rotate Silently	Server-side rotations via RotationManager; camera never moves.	true				
+Auto Obby Crystal	dM	Swap Back	Returns to the previous slot after the sequence idles.	true				
+Auto Obby Crystal	dM	Render	Draw boxes showing what the module is calculating and placing.	true				
+Auto Obby Crystal	dM	Advanced	Show fine-grained tuning knobs (delays, prediction, momentum, colors, thresholds).	false				
+Auto Obby Crystal	dO	Max Target Distance	Aborts the sequence if the target moves beyond this.	12.0	1.0	20.0		
+Auto Obby Crystal	dQ	Place Delay	Random ms between obsidian place and crystal place.	60.0	0.0	500.0	60.0	120.0
+Auto Obby Crystal	dQ	Break Delay	Random ms between crystal place and break, and between loop cycles.	60.0	0.0	500.0	60.0	140.0
+Auto Obby Crystal	dQ	First Action Delay	Random ms reaction delay before the FIRST action of a freshly acquired sequence.	40.0	0.0	200.0	40.0	80.0
+Auto Obby Crystal	dP	Mid Sequence Movement Tolerance	Blocks of target drift allowed once obsidian is committed.	3	1	8		
+Auto Obby Crystal	dO	Mid Sequence Damage Tolerance	Multiplier on Min Damage for the mid-sequence re-gate.	0.6	0.0	1.0		
+Auto Obby Crystal	dM	Debug Aborts	Notify every mid-sequence abort with its stage and reason.	false				
+Auto Obby Crystal	dM	Fast Swap	Swap and place in the same tick instead of burning a tick per swap. Halves obsidian->crystal latency; wire order stays vanilla.	true				
+Auto Obby Crystal	dO	Silent Aim FOV	Caps silent rotation yaw offset from real look.	180.0	0.0	180.0		
+Auto Obby Crystal	dR	Momentum Mode	Biases placement so blast knockback pushes the target this way.	None	[None,Toward Hole,Away From Self,Toward Center]			
+Auto Obby Crystal	dO	Momentum Weight	Multiplier on the momentum bonus in scoring.	1.0	0.0	5.0		
+Auto Obby Crystal	dO	Yaw Change Weight	Score penalty per degree of yaw change from your current look.	0.05	0.0	1.0		
+Auto Obby Crystal	dO	Yaw Change Cap	Yaw delta (deg) at which the penalty stops growing.	60.0	0.0	180.0		
+Auto Obby Crystal	dM	Prefer 1x1	Bonus for bases horizontally adjacent to the target's feet (face-place style).	true				
+Auto Obby Crystal	dM	Prefer Existing Obby	Score bonus for placing crystals on existing obsidian/bedrock.	true				
+Auto Obby Crystal	dM	Only Existing Obby	If on, never places obsidian — only crystals on already-placed obsidian/bedrock.	false				
+Auto Obby Crystal	dP	Path Lookahead	Skip candidates where the target's velocity-extrapolated hitbox intersects the placement.	3	0	10		
+Auto Obby Crystal	dM	Predict Target	Lead moving targets by their velocity so placements land where they will be.	true				
+Auto Obby Crystal	dO	Predict Ticks	Ticks of velocity to extrapolate.	3.0	0.0	10.0		
+Auto Obby Crystal	dO	Predict Ping Bonus	Multiplier on ping-derived lead ticks (ping_ms / 50ms).	1.0	0.0	2.0		
+Auto Obby Crystal	dO	Predict Max Offset	Caps the predicted offset (blocks).	3.0	0.0	8.0		
+Auto Obby Crystal	dM	Predict Self	Extrapolate your own eye position forward.	true				
+Auto Obby Crystal	dO	Self Predict Ticks	Ticks of self velocity to extrapolate.	2.0	0.0	8.0		
+Auto Obby Crystal	dO	Self Predict Max Offset	Caps the predicted self offset (blocks).	2.0	0.0	6.0		
+Auto Obby Crystal	dO	Reach	Attacks within this eye-to-hitbox distance (blocks). >3.0 flags Grim.	2.95	1.0	3.0		
+Auto Obby Crystal	dM	Render Target	Highlight the current target.	true				
+Auto Obby Crystal	dM	Render Placement	Box on the picked obsidian pos + crystal spawn pos.	true				
+Auto Obby Crystal	dM	Render Candidates	Ghost boxes on all viable candidate spots during search.	true				
+Auto Obby Crystal	dP	Max Candidates	Cap how many candidate boxes to draw.	8	1	30		
+Auto Obby Crystal	dN	Obsidian Color	Color for the obsidian placement box.	java.awt.Color[r=150,g=60,b=220]				
+Auto Obby Crystal	dN	Crystal Color	Color for the crystal spawn box.	java.awt.Color[r=230,g=120,b=230]				
+Auto Obby Crystal	dN	Target Color	Color for the target highlight.	java.awt.Color[r=255,g=80,b=80]				
+Auto Obby Crystal	dN	Candidate Color	Color for candidate ghost boxes.	java.awt.Color[r=120,g=200,b=255]				
+Auto Pearl Catch	dO	Wind Charge Delay	Waits this long after the pearl before the wind charge (ms).	120.0	50.0	300.0		
+Auto Pearl Catch	dO	Moving Delay	Uses this shorter wait instead while you are moving (ms).	80.0	50.0	300.0		
+Auto Pearl Catch	dM	Legit Rotate	Moves your real camera instead of snapping server-side.	false				
+Auto Pearl Catch	dO	Smoothing	Scales the camera rotation speed (x). Lower = slower, more human.	0.5	0.1	2.0		
+Auto Pickaxe	dM	Only When Mining	Switches only while you are mining a block.	true				
+Auto Pickaxe	dM	From Inventory	Also pull a pickaxe out of your main inventory (silent SWAP).	true				
+Auto Pickaxe	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	300.0	30.0	50.0
+Auto Pot	dR	Mode	Auto throws at low health; While Holding throws only with a potion in hand.	Auto	[Auto,While Holding]			
+Auto Pot	dO	Health	Throws a heal pot at or below this health (HP, not %).	10.0	0.1	20.0		
+Auto Pot	dO	Pitch	Throws the potion at this pitch (degrees).	70.0	50.0	90.0		
+Auto Re Mace	dO	Rotation Smoothing	Scales the re-aim rotation speed (x). Lower = slower, more human.	0.5	0.0	2.0		
+Auto Re Mace	dO	Above Them	Aims this far above the target when re-macing (degrees).	30.0	0.0	100.0		
+Auto Safe Cart	dR	Mode	Silent scans for threatening carts and covers them itself; Legit only covers the spot you are looking at.	Silent	[Silent,Legit]			
+Auto Safe Cart	dR	Protect	Which carts get covered: Only Self covers carts you placed, Only Enemy covers carts other players placed.	Both	[Both,Only Self,Only Enemy]			
+Auto Safe Cart	dO	Min Damage	Covers only carts that would deal at least this damage (HP).	5.0	0.0	30.0		
+Auto Safe Cart	dO	Max Damage	Stops covering once the damage left after placed blocks is at most this (HP).	5.0	0.0	30.0		
+Auto Safe Cart	dS	Blocks	Blocks the cover can be built from; the first one found in your hotbar is used. Logs and Planks match every wood type.		[Logs,Planks,Cobblestone,Obsidian]	[true,true,true,true]	{Obsidian=3, Planks=1, Logs=0, Cobblestone=2}	
+Auto Safe Cart	dP	Max Blocks	Caps how many blocks are placed against one cart; a second block is placed when the first does not soak enough damage.	2	1	4		
+Auto Safe Cart	dQ	Delay	Waits a random time in this range (ms) when a cart first threatens you and again between blocks. Re-rolled per placement so back-to-back covers don't share one rhythm.	80.0	0.0	500.0	80.0	160.0
+Auto Safe Cart	dR	Swap	None uses the held item; Normal switches hotbar; Silent swaps server-side.	Normal	[None,Normal,Silent]			
+Auto Safe Cart	dO	Range	Scans for TNT carts within this distance (blocks).	10.0	3.0	15.0		
+Auto Safe Cart	dO	FOV	Caps rotations at this yaw offset (degrees).	180.0	0.0	180.0		
+Auto Shield	dO	Target Distance	Blocks with a target within this distance (blocks).	5.0	1.0	10.0		
+Auto Shield	dO	FOV	Blocks with a target within this view angle (degrees).	90.0	0.0	180.0		
+Auto Shield	dO	Movement Threshold	Counts the target as moving above this speed.	0.1	0.0	10.0		
+Auto Shield	dO	Sword Cooldown Correction	Counts your sword swing as recovered this much earlier (%).	10.0	0.0	30.0		
+Auto Shield	dM	Disable Tracker	Detects shield-disable (axe crit) and stops holding useKey for the ~5s server-side lockout so incoming crystal damage isn't 'using-item'-reduced and same-tick swaps aren't blocked.	true				
+Auto Shield	dM	Swap To Sword	Silently switch to a hotbar sword when the shield gets disabled so the dead time becomes offensive time.	false				
+Auto Shield Breaker	dR	Mode	Mode to use to break shields	Automatic	[On Hit,Automatic]			
+Auto Shield Breaker	dM	Stun	Double hits to hit the enemy up after breaking their shield	false				
+Auto Shield Breaker	dO	Chance	Chance to break the shield on each attempt	100.0	0.0	100.0		
+Auto Shield Breaker	dM	From Inventory	Also pull an axe out of your main inventory (silent SWAP).	true				
+Auto Shield Breaker	dQ	Hit Delay	Randomized delay window between swapping to the axe and delivering the hit (ms).	100.0	0.0	300.0	100.0	150.0
+Auto Shield Breaker	dQ	Break Cooldown	Waits a random time in this range between consecutive shield breaks (ms).	900.0	0.0	3000.0	900.0	1200.0
+Auto Shield Breaker	dM	Swap Back	Silently swaps to the axe to break the shield	true				
+Auto Shield Breaker	dM	Silent Aim	Silently swaps to the axe to break the shield	false				
+Auto Shield Breaker	dO	Max Yaw	The maximum difference in yaw the player can rotate to	180.0	0.0	180.0		
+Auto Short Pearl	dQ	Delay	Waits a random time in this range before the pearl throw (ms).	30.0	0.0	300.0	30.0	70.0
+Auto Text	dT	Text	Sends this chat text or command; start with / for commands.	/kit 1	Text or Command (/...)			
+Auto Totem	dR	Mode	Crystal runs the full inventory routine; SMP swaps at low health.	Crystal	[Crystal,SMP]			
+Auto Totem	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	500.0	30.0	50.0
+Auto Totem	dM	Dynamic Delay (BETA)	Shortens the delay when you are in danger.	false				
+Auto Totem	dS	Measures	Judges danger by health, distance, Y level, threats, and damage rate.		[Health,Distance,Y Level,Nearby Threats,Recent Damage Rate]	[true,true,true,true,true]	{Health=0, Nearby Threats=3, Y Level=2, Recent Damage Rate=4, Distance=1}	
+Auto Totem	dS	Actions	Picks which steps of the totem routine run.		[Double Hand,Open Inventory,Refill Hotbar Totem,Switch,Close Inventory]	[true,true,true,true,true]	{Close Inventory=4, Switch=3, Refill Hotbar Totem=2, Open Inventory=1, Double Hand=0}	
+Auto Totem	dP	Totem Slot	Puts the totem in this hotbar slot.	8	1	9		
+Auto Totem	dM	Legit	Switches only while hovering over a totem.	false				
+Auto Totem	dQ	Hover Delay	Waits a random time in this range after hovering (ms).	30.0	0.0	300.0	30.0	50.0
+Auto Totem	dM	Legit Mouse Movement (BETA)	Moves your real mouse to the totem in the inventory.	false				
+Auto Totem	dQ	Mouse Speed	Sets the mouse movement speed range (x).	5.0	1.0	20.0	5.0	10.0
+Auto Totem	dQ	Mouse Move Delay	Waits a random time in this range after opening the inventory (ms).	50.0	1.0	200.0	50.0	100.0
+Auto Totem	dS	Extra	Restricts actions to specific situations: GUI, double pop, totem guard. Pause Interactions blocks world-interact packets during the routine (anti TotemGuard F).		[Double Hand On GUI,Only Inventory on Both Pops,Anti Totem Guard Test,Pause Interactions]	[false,false,true,true]	{Only Inventory on Both Pops=1, Pause Interactions=3, Double Hand On GUI=0, Anti Totem Guard Test=2}	
+Auto Totem	dO	Health	Swaps to a totem at or below this health (HP).	5.0	1.0	20.0		
+Auto Totem	dM	Wait When Shielding	Waits until you stop shielding before switching.	true				
+Auto Totem	dM	Anti Mace	Switches to a totem when an enemy dives to mace you.	true				
+Backtrack	dQ	Range	Backtracks targets inside this distance band (blocks).	1.0	0.0	10.0	1.0	5.0
+Backtrack	dQ	Latency	Holds position packets for a random time in this range (ms).	100.0	0.0	1500.0	100.0	150.0
+Backtrack	dM	Weapon Only	Suppresses backtrack while your mainhand is not a sword/axe/mace. Prevents your cross-modules (PearlFollow, AutoCrystal) from placing on the stale backtracked position when you switch off your weapon.	false				
+Breach Swap	dO	Chance	Rolls this chance on each Breach swap opportunity (%).	100.0	0.0	100.0		
+Cart Aura	dQ	Reaction Delay	Rolls a random delay in this window (ms) each time a new cart is acquired; the hit only fires once it passes. Aim starts tracking immediately — only the attack waits — so it reads as a human noticing the cart rather than an instant aura.	100.0	0.0	1000.0	100.0	250.0
+Cart Aura	dO	Swap Delay	Waits this long between the sword swap and the hit (ms). The swap always settles for at least one full tick regardless of this value.	50.0	0.0	300.0		
+Cart Aura	dM	Swap Back	Returns to the slot you were holding before the sword swap once the hit lands.	true				
+Cart Aura	dO	Swap Back Delay	Waits this long between the hit and the swap back (ms).	50.0	0.0	300.0		
+Cart Aura	dQ	Attack Delay	Rolls a random minimum delay in this window (ms) between consecutive hits — a fixed cadence between attack packets is an aura fingerprint, so the gap is re-rolled after every swing.	50.0	0.0	1000.0	50.0	150.0
+Cart Aura	dO	Target FOV	Filters candidate carts to those inside this angular cone from your view at acquisition time (degrees). 180 = hemisphere, 360 = disabled.	180.0	30.0	360.0		
+Cart Aura	dM	Humanized Aim	Adds a small distance-scaled jitter to the attack rotation so every hit doesn't ship the exact box-center angle — same correlate KillAura's Humanized Aim breaks for player targets.	true				
+Cart Pearl Catch	dO	Scan Range	Only tracks enemy pearls thrown within this distance (blocks).	48.0	16.0	96.0		
+Cart Pearl Catch	dO	Min Damage	Only punishes when the predicted pre-armor blast damage at their landing is at least this (HP).	15.0	0.0	40.0		
+Cart Pearl Catch	dO	Max Self Damage	Skips placements whose worst-case self-damage would exceed this (HP, armor-aware).	6.0	0.0	30.0		
+Cart Pearl Catch	dM	Prefer Xbow	Detonates with flint & steel + charged crossbow when both are in your hotbar; otherwise uses the bow.	true				
+Cart Pearl Catch	dP	Switch Delay	Waits this many ticks between rail, cart, and fire steps.	2	0	20		
+Cart Pearl Catch	dM	Silent Aim	Aims at placements and the shot server-side; your camera never moves.	true				
+Cart Pearl Catch	dO	Silent Aim FOV	Caps silent aim at this yaw offset per tick (degrees).	180.0	0.0	180.0		
+Cart Pearl Catch	dM	Render	Shows a TNT-minecart tag at the spot the cart will be placed, with the pearl's landing ETA.	true				
+Cart Refill	dR	Mode	Always refills while the inventory is open; Keybind waits for the key.	Always	[Always,Keybind]			
+Cart Refill	dL	Refill Key	Press to refill (Keybind mode).	-1	false			
+Cart Refill	dP	Target Slot	Keeps this hotbar slot topped up with a TNT minecart.	9	1	9		
+Cart Refill	dP	Delay	Waits at least this long between refill clicks (ms).	100	0	1000		
+Cart Stealer	dQ	Delay	Waits a random time in this range between cart pulls (ms).	50.0	0.0	1000.0	50.0	100.0
+Cart Stealer	dM	Close	Closes the shulker once every cart is taken (or only the shulker slot is left).	true				
+Cart Stealer	dL	Activate Key	Hold to start stealing. Unbound = steal automatically while a shulker is open.	-1	false			
+Chest Stealer	dQ	Delay	Waits a random time in this range between item pulls (ms).	100.0	0.0	1000.0	100.0	200.0
+Chest Stealer	dM	Close	Closes the chest once it is empty.	true				
+Chest Stealer	dL	Activate Key	Press to start stealing from the open chest.	-1	false			
+Cobweb Placer	dR	Mode	Manual places at your crosshair; Auto predicts landings and places itself.	Manual	[Manual,Auto]			
+Cobweb Placer	dO	Target Range	Auto-places only with an enemy within this distance (blocks).	6.0	1.0	16.0		
+Cobweb Placer	dQ	Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Cobweb Placer	dP	Lead Ticks	Predicts the enemy this many ticks ahead for the placement (ignored when Only When Falling is on Ã¢â‚¬â€ that mode walks the trajectory until it hits ground).	10	1	30		
+Cobweb Placer	dM	Only When Falling	Only fires while the target is airborne and falling; steps their trajectory forward until it hits ground and drops the web at their landing block so they fall into the top of it.	false				
+Cobweb Placer	dP	Max Webs Per Fall	Caps how many webs get placed per fall so it doesn't spam a stack; resets once the target lands or a different target is picked.	1	1	10		
+Cobweb Placer	dM	Silent	Swaps between items server-side.	false				
+Cobweb Placer	dR	Switch Back	Switches to a chosen slot or your original after placing.	Slot	[Slot,Original]			
+Cobweb Placer	dP	Switch Slot	Switches to this hotbar slot after placing.	1	1	9		
+Cobweb Placer	dR	Swap	None places only with cobweb in hand; Swap visibly switches to it.	Swap	[None,Swap]			
+Cobweb Placer	dM	From Inventory	If no cobweb is in the hotbar, pulls one from the main inventory with a silent SWAP (matches the AutoPickaxe hotbarÃ¢â€ â€™inventory upgrade). Reversed on the following tick so the loadout looks untouched.	true				
+Cobweb Placer	dM	Head Trap	Also tries the head-level block; the best candidate wins.	false				
+Cobweb Placer	dR	Auto Switch Back	Off keeps cobweb in hand; Slot switches on the next free tick; Original restores what you held before the cobweb swap on the next free tick.	Off	[Off,Slot,Original]			
+Cobweb Placer	dP	Auto Switch Slot	Switches to this hotbar slot after placing.	1	1	9		
+Cobweb Placer	dM	Render	Outlines the predicted placement position.	true				
+Cobweb Placer	dN	Render Color	Sets the prediction outline color.	java.awt.Color[r=0,g=200,b=255]				
+Criticals	dR	Mode	Legit jumps; Minimal micro-hops; Silent sends packets only.	Legit	[Legit,Minimal,Silent]			
+Diagonal Pearl Catch	dR	Mode	Trajectory simulates a perfect intercept; Macro throws on a fixed delay.	Trajectory	[Trajectory,Macro]			
+Diagonal Pearl Catch	dO	Wind Charge Delay	Waits this long between the pearl and the wind charge (ms).	100.0	10.0	300.0		
+Diagonal Pearl Catch	dM	Silent Aim	Uses the computed angle server-side; your camera never moves.	true				
+Diagonal Pearl Catch	dO	Max Yaw Delta	Caps silent aim at this yaw offset (degrees). 180 = no cap.	180.0	10.0	180.0		
+Double Anchor	dO	Chance	Rolls this chance on each double anchor (%).	100.0	0.0	100.0		
+Double Anchor	dM	Glow Stone	Places glowstone after the double anchor.	false				
+Double Anchor	dQ	Delay	Waits a random time in this range before the glowstone (ms).	50.0	0.0	500.0	50.0	100.0
+Double Anchor	dL	Macro Bind	Press to run the full anchor sequence at your crosshair.	-1	false			
+Double Anchor	dM	Macro Hold Repeat	Keeps re-running the double anchor sequence as long as the bind is held; releases stop after the current sequence.	false				
+Double Anchor	dQ	Macro Delay	Waits a random time in this range between sequence stages (ms).	30.0	0.0	500.0	30.0	50.0
+Double Anchor	dR	Macro Swap	None uses the held item per stage; Swap switches hotbar slots.	Swap	[None,Swap]			
+Double Anchor	dM	Macro Swap Back	Returns to the slot you held when you pressed the bind.	true				
+Double Anchor	dP	Macro Explode Slot	Holds this hotbar slot during the explode step (put a totem here).	8	1	9		
+Double Anchor	dM	Macro Damage Tick	Waits for the target's hurt time to clear before the second anchor.	true				
+Double Anchor	dO	Macro Damage Tick Range	Applies the wait only with a target within this distance (blocks).	10.0	1.0	20.0		
+Double Anchor	dP	Macro Damage Tick Max Wait	Gives up waiting after this long and fires anyway (ms).	500	0	2000		
+ESP	dR	Mode	Selects the shader used to draw entity outlines/fills.	Normal	[Normal,Chams,Aura]			
+ESP	dS	Targets	Outlines these entity types.		[Players,Crystals,Items,Monsters,Ambient,Friendly,Aquatic,Nether,End,Bosses,Tameable,Projectiles,Vehicles,Decorations]	[true,true,true,false,false,false,false,false,false,false,false,false,false,false]	{Friendly=5, Tameable=10, Projectiles=11, Crystals=1, Nether=7, Bosses=9, Vehicles=12, Decorations=13, Ambient=4, Aquatic=6, Monsters=3, Items=2, End=8, Players=0}	
+ESP	dM	Menu Color	Follows the menu accent color instead of a custom one.	true				
+ESP	dN	Color	Custom outline color.	java.awt.Color[r=0,g=200,b=255]				
+ESP	dP	Quality	Raises outline shader quality. Default 3 balances smoothness and FPS; 6 is the safe sampling cap.	3	1	6		
+ESP	dP	Radius	Widens the outline glow (px).	15	1	20		
+ESP	dM	Fill	Fills the silhouette instead of outlining only.	false				
+ESP	dO	Opacity	Body alpha of the flat fill.	0.5	0.1	1.0		
+ESP	dO	Rim Width	Darker separator rim; 0 disables the edge search.	2.0	0.0	4.0		
+ESP	dO	Line Width	Thickness of the crisp core line.	1.0	0.1	2.0		
+ESP	dO	Halo Opacity	Diffuse halo strength around the silhouette.	0.7	0.0	1.0		
+ESP	dO	Core Boost	How white-hot the line center gets; 0 = pure accent.	0.8	0.0	1.0		
+ESP	dM	Invisible	Force-renders invisible entities so their outline shows.	true				
+Enemy Faker	dT	Name	Shows the target under this fake name.	Marlowww	Fake Name			
+Enemy Faker	dT	Gamemode	Sets the gamemode label shown with the tier tag.	vanilla	Gamemode			
+Enemy Faker	dR	Tier	Shows this tier tag (HT1–LT5) next to the fake name.	None	[None,HT1,LT1,HT2,LT2,HT3,LT3,HT4,LT4,HT5,LT5]			
+Enemy Faker	dM	Update	Re-applies the fake identity; the toggle acts as a one-shot button.	false				
+Extended Reach	dO	Chance	Rolls this chance on each extended-reach hit (%).	100.0	0.0	100.0		
+Extended Reach	dS	Weapons	Extends reach for swords, axes, and/or maces.		[Sword,Axe,Mace]	[true,true,true]	{Mace=2, Sword=0, Axe=1}	
+Extended Reach	dM	Works With Triggerbot	Lets Triggerbot fire on extended-reach targets.	true				
+Fake Lag	dR	Mode	Holds packets manually, on a timer, by range, dynamically, or on knockback.	Manual	[Manual,Timed,Ranged,Dynamic,Knockback]			
+Fake Lag	dQ	Lag Range	Holds packets while an enemy is inside this distance band (blocks).	3.0	0.0	10.0	3.0	5.0
+Fake Lag	dO	Target FOV	Considers enemies within this view angle (degrees).	180.0	0.0	360.0		
+Fake Lag	dQ	Choke	Holds packets for a random burst interval in this range (ms).	100.0	0.0	1000.0	100.0	150.0
+Fake Lag	dQ	Range Choke	Caps range-based holds at a random time in this range (ms).	500.0	0.0	1000.0	500.0	700.0
+Fake Lag	dS	Send Packets	Flushes held packets on these actions: hits, swings, clicks, explosions.		[On Interact Entity,On Hand Swing,On Interact Block,On Interact Item,On Click Slot,On Explosion]	[false,false,false,false,false,false]	{On Interact Block=2, On Click Slot=4, On Interact Item=3, On Interact Entity=0, On Hand Swing=1, On Explosion=5}	
+Fake Lag	dM	Render	Draws a circle showing how long packets have been held.	true				
+Fast EXP	dR	Mode	Manual: speeds up bottles while you hold RMB. Automatic: swaps to EXP and mends damaged Mending gear on its own.	Manual	[Manual,Automatic]			
+Fast EXP	dQ	Delay	Waits a random time in this range between bottle throws (ms).	30.0	20.0	500.0	30.0	50.0
+Fast EXP	dM	Rotate Down	Pitches down while throwing bottles.	false				
+Fast EXP	dM	From Inventory	Also pull EXP bottles out of your main inventory (silent SWAP).	true				
+Fast EXP	dM	Swap Back	Returns to the previous slot after mending completes.	true				
+Fast Pearl Catch	dR	Mode	Swap switches hotbar slots between the two throws. Offhand swap-hands the wind charge into your offhand first, then throws pearl (mainhand) and wind charge (offhand) back-to-back with no slot swap between them — faster — then restores your original offhand item.	Swap	[Swap,Offhand]			
+Fast Pearl Catch	dO	Pearl Angle	Pearl throw angle above horizontal (degrees), along your view direction. 90 = straight up (classic Auto Pearl Catch); lower = flatter and farther forward.	48.0	0.0	90.0		
+Fast Pearl Catch	dO	Offhand Pearl Angle	Pearl throw angle above horizontal (degrees) in Offhand mode. Steeper keeps the pearl closer above you so the offhand wind charge meets it sooner.	70.0	0.0	90.0		
+Fast Pearl Catch	dO	Offhand Wind Charge Angle	Wind charge throw angle above horizontal (degrees) in Offhand mode. Tune against Offhand Pearl Angle to control where the intercept happens — steeper meets the pearl earlier/closer.	66.0	0.0	90.0		
+Fast Pearl Catch	dO	Wind Charge Angle	Wind charge throw angle above horizontal (degrees). Tune relative to the pearl angle to control where the intercept happens — steeper meets the pearl earlier/closer, shallower later/farther.	40.0	0.0	90.0		
+Fast Pearl Catch	dM	Swap Back	Returns to your original hotbar slot right after the wind charge throw, so you land holding what you had at enable (e.g. mace).	true				
+Fast Pearl Catch	dM	Legit Rotate	Moves your real camera instead of snapping server-side. Swap mode only.	false				
+Fast Pearl Catch	dO	Smoothing	Scales the camera rotation speed (x). Lower = slower, more human.	0.5	0.1	2.0		
+Fast Place	dM	Blocks Only	Speeds up block items only, not all usable items.	false				
+Fast Place	dP	Min Speed	Sets the lowest use cooldown rolled per placement (ticks). 0 = every tick.	0	0	4		
+Fast Place	dP	Max Speed	Sets the highest use cooldown rolled per placement (ticks).	1	0	4		
+Free Look	dM	Third Person	Switches to third person while free-looking.	true				
+Freecam	dO	Speed	Sets camera fly speed (x).	1.0	0.1	10.0		
+Freecam	dM	Render Previous	Keeps drawing your body at its real position.	true				
+Friends	dM	No Attack	Blocks attacks on friends.	false				
+Friends	dM	Highlight	Colors friend names blue.	false				
+Ghost Place	dM	Cobweb Only	Restrict placements to cobweb. Off = any block in main hand goes through.	true				
+Ghost Place	dM	Use Offhand	Also accept a placeable in the offhand. Main hand still takes precedence when both hands are placeable — this only catches sword-main + cobweb-offhand loadouts, where vanilla right-click on a mob would enter the entity path before ever reaching offhand block placement.	false				
+Hit Effect	dP	Amount	Spawns this many particles per hit.	10	1	20		
+Hit Effect	dP	Lifespan	Keeps particles alive this long (seconds).	10	1	60		
+Hit Effect	dM	Physics	Gives particles gravity and collisions.	true				
+Hit Effect	dM	Totem Pop	Spawns particles on totem pops too.	true				
+Hit Fix	dM	Weapon Only	Attacks only while holding a weapon.	true				
+Hit Fix	dM	Only On Ground	Delays the hit until the target is on the ground.	true				
+Hit Fix	dM	Damage Tick	Waits for the target's hurt time to clear before hitting.	true				
+Hit Flick	dM	Players Only	Skips flicks on non-player entities. Crystals / anchors / mobs are single-hit and the flick just fights AutoCrystal / AutoAnchor / AutoObbyCrystal for the rotation slot, wasting the state machine without ever rendering.	true				
+Hit Flick	dM	Require Sprint	Flicks only while sprinting.	true				
+Hit Flick	dO	Min Angle	Sets the smallest flick angle (degrees).	60.0	10.0	180.0		
+Hit Flick	dO	Max Angle	Sets the largest flick angle (degrees).	75.0	10.0	180.0		
+Hit Flick	dR	Direction	Flicks left, right, or randomly.	Right	[Left,Right,Random]			
+Hitboxes	dM	Player Only	Expands player hitboxes only.	false				
+Hitboxes	dO	Expand	Grows hitboxes by this amount (blocks).	0.5	0.0	5.0		
+Hitboxes	dM	Render Hitboxes	Draws the expanded hitboxes.	true				
+Hitboxes	dO	Distance	Only expands / draws hitboxes within this distance (blocks). Also gates the None-mode setBox path so 200-block-away zombies, item frames, and boats aren't silently re-boxed on every entity tick.	5.0	0.1	20.0		
+Hitboxes	dR	Anti Cheat	Grim/Vulcan keeps expansion within what those anticheats tolerate.	None	[Grim/Vulcan,None]			
+Hitboxes	dM	Ignore Walls	Skips the eye-to-eye canSee occlusion check when the expanded-box raycast succeeds — the whole point of expansion is to catch hits where a box lobe pokes past a corner obby while the target's eye is still behind it. Leave OFF for Grim (Post/HitboxA correlates a swing on an eye-occluded target). Turn ON for Vulcan.	false				
+Hitboxes	dM	Skip Shielding	Skips the silent hit when the target is actively raising a shield. Prevents the sword-disable (~1s axe/sword lockout) that a contact swing eats — catastrophic in Crystal because it desyncs crystal-swap timing. Uses a rotation-independent check (not TargetUtil.isShielding's canHitAroundShield fallback), which flips false the instant the target strafes; the server re-evaluates shield facing per-tick so the lazy check would still eat the disable. AutoShieldBreaker is the correct tool for punching through raised shields.	true				
+Hud Editor	dO	HUD Scale	Scales the whole HUD (%). 115 matches the previous fixed size.	115.0	50.0	200.0		
+Instant Crossbow	dM	From Inventory	Also pull a crossbow out of your main inventory (silent SWAP).	true				
+Instant Lunge	dM	Swap Back	Returns to the previous slot after the lunge.	true				
+Instant Lunge	dQ	Swap Back Delay	Waits a random time in this range before swapping back (ms).	20.0	0.0	300.0	20.0	70.0
+Instant Shield	dL	Swap Key	Instantly switches to a shield when pressed; press again to return to the previous slot. If the bind is in Hold mode, release the key to swap back.	-1	false			
+Instant Shield	dM	From Inventory	Also pull a shield out of your main inventory (silent SWAP).	true				
+Item ESP	dO	Scale	Scales the item nametag (x).	1.0	0.1	2.0		
+Item ESP	dP	Limit	Caps rendered nametags at this count.	100	1	200		
+Item ESP	dO	Max Distance	Hides items beyond this distance (blocks).	64.0	8.0	256.0		
+Item ESP	dM	Background	Draws a panel behind the nametag.	true				
+Item ESP	dN	Background Color	Sets the nametag panel color.	java.awt.Color[r=14,g=14,b=14]				
+Jump Circles	dM	Self Only	Spawns circles on your own jumps only.	false				
+Jump Circles	dO	Max Radius	Grows the circle to this final radius (blocks).	1.0	0.2	5.0		
+Jump Circles	dP	Duration	Keeps each circle visible this long (ms).	1200	200	4000		
+Jump Circles	dO	Thickness	Sets ring thickness (blocks).	0.02	0.005	0.1		
+Jump Circles	dO	Glow Distance	Bleeds the glow halo this far outward (blocks).	0.15	0.0	0.5		
+Jump Circles	dM	Theme Color	Uses the menu theme color.	true				
+Jump Circles	dN	Color	Sets the circle color when not using the theme.	java.awt.Color[r=131,g=118,b=252]				
+Keep Sprint	dQ	Restore Delay	Randomizes the tick delay between releasing W and re-pressing it. A fixed +1-tick handoff is a Killaura fingerprint — Vulcan / Verus flag the deterministic cadence.	1.0	0.0	3.0	1.0	2.0
+Key Pearl	dQ	Delay	Waits a random time in this range between actions (ms).	10.0	0.0	50.0	10.0	30.0
+Key Wind Charge	dR	Mode	Normal switches your hotbar; Silent swaps server-side only.	Normal	[Normal,Silent]			
+Key Wind Charge	dQ	Delay	Waits a random time in this range between actions (ms).	10.0	0.0	50.0	10.0	30.0
+Kill Aura	dO	Reach	Attacks within this eye-to-hitbox distance (blocks). Server caps at 3.0.	2.95	1.0	3.0		
+Kill Aura	dM	Sticky Targeting	Keeps the current target until it dies or leaves range.	true				
+Kill Aura	dM	Humanized Aim	Adds a small distance-scaled yaw/pitch jitter to the attack rotation so every hit doesn't ship the exact eye-vector angle — a perfect-center snap on every attack is a Ghost / Vulcan Killaura correlate. Uses RotationUtil.randomizeRotation, which auto-scales spread by 1/distance (short-range hits stay tight) and clamps pitch to ±89.9 for Grim BadPacketsN.	true				
+Kill Aura	dM	Player Only	Attacks players only.	true				
+Kill Aura	dM	Weapon Only	Attacks only while holding a sword or axe.	false				
+Kill Aura	dR	Cooldown Mode	Vanilla only fires at 100% charge (native MC gate). Range rolls a random threshold in the Cooldown Range window each swing (matches Triggerbot's line-37 pattern) — no two swings land at the same charge, breaking the KillAura fingerprint of a fixed threshold. MinMax pins to the window's min bound as a fixed constant (permissive: attacks fire as soon as charge >= min).	Range	[Vanilla,Range,MinMax]			
+Kill Aura	dQ	Cooldown Range	Rolls a random attack-cooldown threshold in this window each swing (%). Constant thresholds like the old 94% are a KillAura fingerprint — every swing releases at the same charge — so this jitters the release across the window to break the pattern.	88.0	0.0	100.0	88.0	100.0
+Kill Aura	dO	Miss Chance	Percentage chance per fireable tick to skip the attack — a 100% hit rate is the exact stat anticheats correlate. IMPORTANT for safety: a miss sends NO packet at all (no swing, no attack, no slot swap). The anticheat sees literally nothing that tick — no wall-swing, no air-swing, no unpaired swing packet, so this can't cause a flag on its own. The only cost is the ~100ms internal cooldown before the next attempt, which is what humanizes the attack-packet cadence. 5–15% is a plausible human miss rate.	0.0	0.0	25.0		
+Kill Aura	dO	Max Yaw	Caps rotations at this yaw offset from your view (degrees).	180.0	0.0	180.0		
+Kill Aura	dO	Target FOV	Filters candidate targets to those inside this angular cone from your view at ACQUISITION time (degrees). Default 180 = hemisphere (no effective filter, preserves prior behavior). 360 = disabled (short-circuits). Retention is still governed by Max Yaw — a target acquired at 30° that drifts past this cone stays locked while it remains within Max Yaw, so tighten this to prefer front-of-view targets without losing them mid-fight.	180.0	30.0	360.0		
+Kill Aura	dR	On Shielding	Ignore = hit through the shield (0.5x dmg, target still guarded). Skip = don't attack while the shield is up. Prefer Axe = silent-swap to a hotbar axe for the disable-shield hit, then auto-restore.	Ignore	[Ignore,Skip,Prefer Axe]			
+Kill Aura	dS	Aim Points	Anatomy regions the attack may aim at. Each enabled region contributes a candidate hitbox point (X/Z clamped to the hitbox like eyeReachTo, Y sliced to that anatomy band); the region whose candidate lands closest to your eye is picked. Head is the default aim vector — a headshot every frame is a Ghost / Vulcan / Grim AimEyeLock correlate — so Chest is on by default alongside Head, and the module can pick whichever gives the tighter angle per attack. Enable Legs / Thighs to open low-angle attacks against sneaking or crouched targets. Empty selection falls back to eye.		[Head,Neck,Chest,Waist,Thighs,Legs]	[true,false,true,false,false,false]	{Chest=2, Legs=5, Head=0, Waist=3, Neck=1, Thighs=4}	
+Kill Aura	dM	Render Dot	Draws a dot at the exact aim point.	false				
+Kill Aura	dO	Dot Size	Sets the aim dot's radius (blocks).	0.1	0.02	0.5		
+Kill Aura	dN	Dot Color	Sets the aim dot color.	java.awt.Color[r=255,g=64,b=64]				
+Mace Pot	dO	Delay	Waits this long between potion throws (ms).	300.0	50.0	300.0		
+Mace Pot	dM	Auto Disable	Turns the module off after potting.	false				
+Mace Pot	dO	Pitch	Throws potions at this pitch (degrees).	70.0	50.0	90.0		
+Mace Prediction	dR	Mode	Draws predictions as a box, an outline, or both.	Outline	[Box,Outline,Both]			
+Mace Prediction	dM	Predict Air Path	Traces the target's airborne arc to its landing point.	true				
+Mace Prediction	dP	Max Air Pred. Ticks	Simulates the air path up to this many ticks ahead. Higher = more CPU.	100	1	500		
+Mace Prediction	dN	Air Path Color	Sets the air path color.	java.awt.Color[r=255,g=255,b=0]				
+Mace Prediction	dN	Air Landing Color	Sets the air landing marker color.	java.awt.Color[r=0,g=255,b=0]				
+Mace Prediction	dM	Predict Ground Path	Traces the target's on-ground movement ahead.	true				
+Mace Prediction	dP	Ground Pred. Ticks	Simulates the ground path this many ticks ahead.	6	1	15		
+Mace Prediction	dN	Ground Path Color	Sets the ground path color.	java.awt.Color[r=0,g=150,b=255]				
+Mace Prediction	dM	Range Circles	Draws circles at current and predicted landing positions.	true				
+Mace Prediction	dN	Circle Inner	Sets the inner circle color.	java.awt.Color[r=255,g=0,b=0]				
+Mace Prediction	dN	Circle Outer	Sets the outer circle color.	java.awt.Color[r=0,g=255,b=0]				
+Mace Prediction	dO	Circle Alpha	Sets circle opacity (0–255).	255.0	0.0	255.0		
+Name Hider	dR	Mode	Random generates names; Custom uses your text.	Random	[Random,Custom]			
+Name Hider	dT	Custom Name	Replaces your name with this text.	PrestigeClient	Custom Name			
+Name Hider	dM	Randomize	Re-rolls the random name on a timer.	true				
+Name Hider	dO	Speed	Waits this long between name re-rolls (ms).	100.0	0.0	5000.0		
+Name Tags	dO	Scale	Scales the nametag (x).	1.0	0.1	2.0		
+Name Tags	dP	Limit	Caps rendered nametags at this count.	100	1	200		
+Name Tags	dO	Fade Distance	Blocks past which tags fade out (fade over the last 10 blocks).	60.0	20.0	200.0		
+Name Tags	dM	Distance	Shows the distance in meters on the right side of the tag.	true				
+Name Tags	dM	Health Number	Shows a numeric HP value next to the health bar.	false				
+Name Tags	dM	Totem Pops	Shows the player's totem pop count next to the name.	true				
+Name Tags	dM	Hands	Shows main-hand and offhand items below the tag.	true				
+Name Tags	dM	Armor	Shows the player's armor below the tag.	true				
+Name Tags	dM	Enchantments	Shows enchantment levels on armor and held items.	true				
+No Miss Delay	dP	Humanize %	Chance per air-swing to behave like vanilla: reset cooldown AND play the swing animation. 0 = always suppress (fingerprint: no player ever preserves 100% of miss charges), 100 = module effectively off. A few percent (5-15) is enough to defeat Vulcan / Verus / Intave 'zero air-swing charge loss' correlates while still buying most of the DPS advantage.	0	0	100		
+No Miss Delay	dM	In Combat Only	Only preserves the cooldown / hides the swing when a hostile player (alive, not self, not friend, passes AntiBot) is within Range. Out of combat, defers to vanilla so open-world air-swings look normal — otherwise every miss on a mob, a fence, or empty air ships a suppressed reset that has no PvP purpose and stands out on server logs.	false				
+No Miss Delay	dO	Range	Radius (blocks) around you to search for a hostile player when In Combat Only is on.	5.0	3.0	8.0		
+Ore Simulation	dS	Ores	Highlights these simulated ore types.		[Coal,Copper,Iron,Lapis,Redstone,Gold,Diamond,Emerald,Quartz,Ancient Debris]	[true,true,true,true,true,true,true,true,true,true]	{Gold=5, Iron=2, Diamond=6, Quartz=8, Redstone=4, Emerald=7, Ancient Debris=9, Coal=0, Lapis=3, Copper=1}	
+Ore Simulation	dT	Seed	Simulates ore generation from this world seed.		Seed to use for the simulation			
+Ore Simulation	dP	Chunks	Simulates this many chunks around you. Higher = slower.	5	1	10		
+Parkour	dQ	Distance	Auto-jumps within a random edge distance in this range (blocks).	0.1	0.0	10.0	0.1	1.0
+Pearl Follow	dO	Thrower Range	Only chases pearls thrown by an enemy within this distance (blocks).	50.0	5.0	200.0		
+Pearl Follow	dO	Min Landing Distance	Ignores pearls landing this close to us — skips hole-fight up-close pearls that would drop the enemy inside our own bubble (blocks).	8.0	0.0	50.0		
+Pearl Follow	dO	Landing Range	Only chases pearls landing within this distance of us (blocks).	60.0	5.0	200.0		
+Pearl Follow	dO	Max Error	Rejects solutions whose simulated landing is further than this from the enemy pearl's landing (blocks).	2.0	0.5	10.0		
+Pearl Follow	dQ	Delay	Waits a random time in this range after detecting the enemy pearl before throwing (ms).	50.0	0.0	500.0	50.0	100.0
+Pearl Follow	dQ	Swap Back Delay	Waits a random time in this range after the throw before switching back to the slot you had held (ms).	100.0	0.0	2000.0	100.0	300.0
+Pearl Follow	dM	Only On Ground	Only chases while standing on ground (avoids mid-fall or elytra desyncs).	false				
+Pearl Follow	dM	Target Only	Only chases pearls whose thrower is your locked TargetManager target. Skips everyone else regardless of Thrower Range — the setting has already narrowed us to one enemy. Note: while enabled, the module goes silent if no target is locked (fresh join, target timed out at >15 blocks / 5s since last hit) — that's the intended semantics, not a bug. Turn off to fall back to the range-based filter.	false				
+Pearl Trajectory	dM	Render Line	Draws the predicted flight path.	true				
+Pearl Trajectory	dM	Theme Color	Uses the menu theme color for the line.	false				
+Pearl Trajectory	dN	Line Color	Sets the trajectory line color.	java.awt.Color[r=14,g=14,b=14]				
+Pearl Trajectory	dM	Landing Tag	Shows a nametag at the predicted landing point.	true				
+Pearl Trajectory	dO	Tag Scale	Scales the landing nametag (x).	1.0	0.1	2.0		
+Pearl Trajectory	dM	Tag Background	Draws a panel behind the landing nametag.	true				
+Pearl Trajectory	dN	Tag Bg Color	Sets the landing nametag panel color.	java.awt.Color[r=14,g=14,b=14]				
+Pearl Wind Charge	dM	Auto Swap	Switches to the pearl and wind charge for you.	true				
+Pearl Wind Charge	dM	Jump	Jumps as the combo starts for extra height.	true				
+Potion Refill	dM	Health Pot Only	Refills healing potions only.	false				
+Potion Refill	dQ	Delay	Waits a random time in this range between potion swaps (ms).	30.0	0.0	300.0	30.0	50.0
+Predict Double Hand	dS	Triggers	Double-hands on these threats: anchors, crystals, obsidian, sword pops, mace smashes, pearls.		[Anchors,Crystals,Obsidian,Sword Pop,Mace,Pearl]	[true,true,true,true,true,false]	{Anchors=0, Pearl=5, Mace=4, Sword Pop=3, Crystals=1, Obsidian=2}	
+Predict Double Hand	dS	Pause	Pauses while these modules are active.		[Auto Crystal,Auto Hit Crystal,Shield]	[true,true,true]	{Shield=2, Auto Crystal=0, Auto Hit Crystal=1}	
+Predict Double Hand	dQ	Re-swap Delay	Waits a random time in this range after re-swapping (ms).	30.0	0.0	300.0	30.0	50.0
+Predict Double Hand	dO	Sensitivity	Scales how eagerly threats trigger a double hand (x).	1.0	0.5	1.5		
+Reach	dO	Chance	Rolls this chance on each extended hit (%).	60.0	0.0	100.0		
+Reach	dQ	Reach	Adds a random amount in this range to your reach (blocks).	0.0	0.0	2.0	0.0	0.1
+Refill	dR	Mode	Always refills while the inventory is open; Keybind waits for the key.	Always	[Always,Keybind]			
+Refill	dL	Refill Key	Press to refill (Keybind mode).	-1	false			
+Refill	dP	Threshold	Tops off hotbar stacks at or below this count (items).	32	1	63		
+Refill	dP	Delay	Waits at least this long between refill clicks (ms).	100	0	1000		
+Render Optimizer	dM	Hurt Cam	Removes the hurt-cam shake on damage.	false				
+Render Optimizer	dM	Fire	Removes the fire overlay while burning.	false				
+Render Optimizer	dM	Particles	Removes all particles.	false				
+Render Optimizer	dM	Background Tint	Removes the dark tint behind GUI screens.	false				
+Render Optimizer	dM	Full Bright	Lights every block fully, no torches needed.	false				
+Render Optimizer	dM	Remove Weather	Removes rain and snow.	false				
+Render Optimizer	dM	Shorten Loading Screen	Skips the downloading-terrain screen.	false				
+Render Optimizer	dM	No Scoreboard	Hides the scoreboard.	false				
+Render Optimizer	dM	No Title	Hides title text.	false				
+Render Optimizer	dM	No Hotbar Text	Hides hotbar item names.	false				
+Right Clicker	dO	Min CPS	Lowest clicks per second.	5.0	0.0	25.0		
+Right Clicker	dO	Max CPS	Highest clicks per second.	15.0	0.0	25.0		
+Safe Anchor	dR	Mode	Legit covers the anchor you charge; Blatant covers nearby anchors itself.	Legit	[Legit,Blatant]			
+Safe Anchor	dM	Only Own	Covers only anchors you placed.	true				
+Safe Anchor	dO	Min Damage	Covers only anchors that would deal at least this damage (HP).	5.0	0.0	30.0		
+Safe Anchor	dO	Max Damage	Accepts at most this much damage left after covering (HP).	5.0	0.0	30.0		
+Safe Anchor	dR	When	Covers before or after the glowstone charge.	Before Charge	[Before Charge,After Charge]			
+Safe Anchor	dQ	Delay	Waits a random time in this range (ms). Legit: after your anchor place packet before firing the cover. Blatant: reaction time after first noticing an anchor, and between covers. Vanilla auto-cover is one tick (~50 ms) — a fixed, machine-perfect reaction. Humans take 200+ ms; a randomized 80-160 ms window looks reactive without being fatally slow.	20.0	0.0	500.0	20.0	100.0
+Safe Anchor	dR	Swap	None uses the held item; Normal switches hotbar; Silent swaps server-side.	None	[None,Normal,Silent]			
+Safe Anchor	dR	Block	Covers with glowstone or obsidian.	Glowstone	[Glowstone,Obsidian]			
+Safe Anchor	dP	Limit	Caps how many cover blocks are placed per anchor.	1	1	5		
+Safe Anchor	dO	FOV	Caps rotations at this yaw offset (degrees).	180.0	0.0	180.0		
+Shield Drain	dO	Horizontal Target Dist	Searches for shielders within this horizontal distance (blocks).	5.0	0.0	6.0		
+Shield Drain	dO	Max Range	Ignores targets beyond this distance (blocks).	4.5	3.0	6.0		
+Shield Drain	dO	Min Fall Distance	Drains only after falling this far (blocks). 0 = always.	0.0	0.0	50.0		
+Shield Drain	dM	Only On Crosshair	Drains only the player under your crosshair.	false				
+Shield Drain	dM	Require Mace	Runs only while holding a mace; disables auto-swap.	true				
+Shield Drain	dM	Pause On Ground	Stops draining when you touch the ground.	false				
+Shield Drain	dP	Clicks Per Tick	Sends this many attacks per tick. 3 ≈ 60 CPS; 10 ≈ 200 CPS, blatant.	2	1	10		
+Shield Drain	dM	Auto Swap	Switches to a mace when you are not holding one.	true				
+Shield Drain	dM	Silent	Returns to the previous slot once the target stops shielding.	false				
+Shield Renderer	dM	Overlay	Draws a colored overlay on shields to show their state.	true				
+Shield Renderer	dM	Render Self	Overlays your own shield too.	true				
+Shield Renderer	dR	Render Mode	Shows overlays always, only while shields are up, or only when broken.	Always	[Always,Normal,Broken]			
+Shield Renderer	dO	X Offset	Shifts the overlay along X (blocks).	0.0	-1.0	1.0		
+Shield Renderer	dO	Y Offset	Shifts the overlay along Y (blocks).	0.0	-1.0	1.0		
+Shield Renderer	dO	Z Offset	Shifts the overlay along Z (blocks).	0.0	-1.0	1.0		
+Shield Renderer	dO	X Scale	Stretches the overlay along X (x).	1.0	0.0	2.0		
+Shield Renderer	dO	Y Scale	Stretches the overlay along Y (x).	1.0	0.0	2.0		
+Shield Renderer	dO	Z Scale	Stretches the overlay along Z (x).	1.0	0.0	2.0		
+Shield Renderer	dN	Default Color	Sets the intact-shield overlay color.	java.awt.Color[r=0,g=255,b=0]				
+Shield Renderer	dN	Broken Color	Sets the broken-shield overlay color.	java.awt.Color[r=255,g=0,b=0]				
+Short Pearl	dR	Mode	Legit rotates your real camera; Silent rotates server-side only.	Legit	[Legit,Silent]			
+Short Pearl	dQ	Min Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Short Pearl	dM	Switch Back	Returns to the previous slot after the throw.	true				
+Short Pearl	dO	Pitch	Throws the pearl at this pitch (degrees).	70.0	30.0	90.0		
+Short Pearl	dO	Smoothing	Scales the camera rotation speed (x). Lower = slower, more human.	0.5	0.1	2.0		
+Short Wind Charge	dR	Mode	Legit rotates your real camera; Silent rotates server-side only.	Legit	[Legit,Silent]			
+Short Wind Charge	dQ	Min Delay	Waits a random time in this range between actions (ms).	30.0	0.0	200.0	30.0	50.0
+Short Wind Charge	dM	Switch Back	Returns to the previous slot after the throw.	true				
+Short Wind Charge	dM	Auto Jump	Jumps as the wind charge is thrown.	true				
+Short Wind Charge	dO	Pitch 1	Throws the wind charge at this pitch (degrees).	40.0	30.0	90.0		
+Short Wind Charge	dO	Smoothing	Scales the camera rotation speed (x). Lower = slower, more human.	0.5	0.1	2.0		
+Silent Aim	dM	Player Only	Aims at players only.	true				
+Silent Aim	dM	Weapon Only	Runs only while holding a sword or axe.	false				
+Silent Aim	dM	Continuous Tracking	Tracks the closest target every tick instead of only snapping on hit.	false				
+Silent Aim	dO	Max Yaw	Caps silent aim at this yaw offset from your view (degrees).	180.0	0.0	180.0		
+Silent Aim	dO	Max Pitch	Caps silent aim at this pitch offset from your view (degrees). Pitch is intrinsically clamped to ±90 so no seam-wrap folding is needed — a plain absolute delta. Default 90 is a no-op ceiling; tighten to reject aim vectors that would ship a suspicious head-snap up/down (e.g. crystalled feet directly below the crosshair).	90.0	0.0	90.0		
+Silent Aim	dS	Aim Points	Anatomy regions the silent aim may point at. Each enabled region contributes a candidate: X/Z clamped to the hitbox (same math as vanilla's nearest-point) and Y sliced to that region's band; the region whose candidate lands closest to your eye wins. Head every hit is a Ghost / Vulcan / Grim AimEyeLock correlate, so Body is on by default alongside Head so the picker can prefer the tighter angle per attack. Enable Legs / Feet to open low-angle attacks on crouched targets or crystalled feet. Empty selection falls back to the eye vector (never breaks the module).		[Head,Neck,Body,Arms,Thighs,Legs,Feet]	[true,false,true,false,false,false,false]	{Legs=5, Head=0, Arms=3, Neck=1, Thighs=4, Body=2, Feet=6}	
+Silent Aim	dM	Render Dot	Draws a dot where the silent aim points.	false				
+Silent Aim	dO	Dot Size	Sets the aim dot's radius (blocks).	0.1	0.02	0.5		
+Silent Aim	dN	Dot Color	Sets the aim dot color.	java.awt.Color[r=255,g=64,b=64]				
+Spear Mace Double Tap	dO	Trigger Fall Distance	Swaps to the mace after falling this far (blocks).	3.0	0.0	20.0		
+Storage ESP	dS	Targets	Glows these storage block types.		[Chests,Trapped Chests,Ender Chests,Shulker Boxes,Barrels,Hoppers,Dispensers,Droppers,Furnaces,Brewing Stands]	[true,true,true,true,true,false,false,false,false,false]	{Trapped Chests=1, Ender Chests=2, Dispensers=6, Chests=0, Barrels=4, Furnaces=8, Shulker Boxes=3, Hoppers=5, Droppers=7, Brewing Stands=9}	
+Storage ESP	dM	Fill	Fills blocks with the glow color instead of outline only.	true				
+Storage ESP	dN	Chests Color	Sets the chest glow color.	java.awt.Color[r=255,g=165,b=0]				
+Storage ESP	dN	Trapped Chests Color	Sets the trapped chest glow color.	java.awt.Color[r=220,g=50,b=50]				
+Storage ESP	dN	Ender Chests Color	Sets the ender chest glow color.	java.awt.Color[r=130,g=60,b=220]				
+Storage ESP	dN	Shulkers Color	Sets the shulker box glow color.	java.awt.Color[r=235,g=100,b=235]				
+Storage ESP	dN	Barrels Color	Sets the barrel glow color.	java.awt.Color[r=180,g=140,b=90]				
+Storage ESP	dN	Hoppers Color	Sets the hopper glow color.	java.awt.Color[r=160,g=160,b=160]				
+Storage ESP	dN	Dispensers Color	Sets the dispenser glow color.	java.awt.Color[r=120,g=120,b=120]				
+Storage ESP	dN	Droppers Color	Sets the dropper glow color.	java.awt.Color[r=140,g=110,b=90]				
+Storage ESP	dN	Furnaces Color	Sets the furnace glow color.	java.awt.Color[r=220,g=90,b=30]				
+Storage ESP	dN	Brewing Stands Color	Sets the brewing stand glow color.	java.awt.Color[r=80,g=200,b=80]				
+Streamer Mode	dM	Exclude Friends	Keeps friend names unmasked.	false				
+Streamer Mode	dT	Prefix	Starts every alias with this text.	PrestigeClient	Prefix			
+Streamer Mode	dR	Mode	Numbered counts aliases up; Random generates fresh ones.	Numbered	[Numbered,Random]			
+Streamer Mode	dM	Include Self	Replaces your own name too.	true				
+Swap Hit	dM	Totem Only	Swaps only while holding a totem.	false				
+Swap Hit	dO	Swap Delay	Waits this long between the sword swap and the hit (ms).	50.0	0.0	300.0		
+Swap Hit	dO	Swap Back Delay	Waits this long between the hit and the swap back (ms).	50.0	0.0	300.0		
+Swap Hit	dM	Shield Aware	If the target is actively shielding into you, a sword swap does 0 damage AND wastes the disable-shield stun an axe would apply. When on, skip the sword swap in that case (or divert to Prefer Axe below).	true				
+Swap Hit	dM	Prefer Axe	Instead of skipping when the target is shielding, swap to an axe hotbar slot so the hit disables the shield + applies its 5s cooldown. Falls back to skip if no axe is in the hotbar.	true				
+Target Renderer	dR	Mode	Draws the target effect as a ghost or a square.	Ghost	[Ghost,Square]			
+Totem Animation	dP	Speed	Sets the totem pop animation speed (x).	1	0	5		
+Trails	dM	Self Only	Draws your own trail only.	true				
+Trails	dR	Mode	Draws footsteps, a ring, or particles.	Footsteps	[Footsteps,Ring,Particles]			
+Trails	dP	Duration	Keeps each trail point visible this long (ms).	1500	200	5000		
+Trails	dO	Size	Scales the trail (x).	1.0	0.2	3.0		
+Trails	dM	Theme Color	Uses the menu theme color.	true				
+Trails	dN	Color	Sets the trail color when not using the theme.	java.awt.Color[r=131,g=118,b=252]				
+Trajectories	dR	Render	Predicts all projectiles, or only crossbows, bows, or pearls.	All	[All,Crossbow,Bow,Bows,Pearl]			
+Trajectories	dN	Color	Sets the color of the trajectory beam and impact rings.	java.awt.Color[r=131,g=118,b=252]				
+Triggerbot	dS	Targets	Attacks players, crystals, or anything.		[Any,Players,Crystals]	[false,true,true]	{Any=0, Players=1, Crystals=2}	
+Triggerbot	dM	Sticky Target	Locks the first player hit until they die or leave range.	false				
+Triggerbot	dO	Sticky Range	Distance at which a locked sticky target is released. Was hardcoded 5.0 — expose it so users can tighten (kite-heavy fights, avoid re-lock over a wall) or loosen (long-reach setups). Range 3–8: 3 is roughly a sword swing, 8 covers a mace / spear-reach extension.	5.0	3.0	8.0		
+Triggerbot	dS	Sword Settings	Toggles sword rules: weapon only, crit timing, invisibles, crit only.		[Weapon Only,Criticals Timing,Attack Invisibles,Crit Only]	[true,true,false,false]	{Attack Invisibles=2, Crit Only=3, Criticals Timing=1, Weapon Only=0}	
+Triggerbot	dS	Crystal Settings	Toggles crystal rules: crystal only, on-ground only, pause on kill.		[Crystal Only,On Ground Only,Pause On Kill]	[true,true,true]	{On Ground Only=1, Crystal Only=0, Pause On Kill=2}	
+Triggerbot	dM	Require Left Click	Fires only while left click is held.	false				
+Triggerbot	dM	Pause In Screen	Pauses while a screen is open.	true				
+Triggerbot	dM	Ignore Friends	Skips players on your Socials friend list. Off = Triggerbot will happily attack friends whose name matches your list (previous behavior — no socials guard existed).	true				
+Triggerbot	dM	Debug Targets	When a crosshair entity is rejected, prints its class + which gate failed to chat (rate-limited per entity).	false				
+Triggerbot	dQ	Delay	Waits a random time in this range after seeing the target (ms).	0.0	0.0	500.0	0.0	0.0
+Triggerbot	dQ	Cooldown	Fires within this attack-cooldown window (%). 80–100 is the default.	80.0	0.0	100.0	80.0	100.0
+Triggerbot	dM	TPS Sync	Raises the cooldown threshold on laggy servers to avoid double swings.	true				
+Triggerbot	dO	Miss Chance	Percentage chance for a fireable player acquisition to be missed. A missed player is not retried until the crosshair leaves or switches target, or Require Left Click is released. Crystals are never missed. 5–15% is a plausible human miss rate.	0.0	0.0	25.0		
+Triggerbot	dQ	Custom Cooldown	Millisecond gate that replaces the vanilla attack-cooldown check when Weapon Only is OFF. Before this, holding a shovel / totem / bow / fist against a player let Triggerbot fire every tick because the cooldown branch was gated on `weapon`. Rolls a random ms threshold in this window per fire (jitter matches AutoShieldBreaker's breakCooldown pattern — a fixed threshold is trivially fingerprintable). Crystals bypass this gate entirely.	100.0	0.0	1000.0	100.0	200.0
+Two DESP	dM	Show Invisibles	Draws boxes for invisible players too.	true				
+Two DESP	dR	Style	Draws a full box, corner brackets, or side brackets.	Corners	[Box,Corners,Brackets]			
+Two DESP	dO	Rounding	Rounds box corners by this radius (px).	2.0	0.0	8.0		
+Two DESP	dO	Line Width	Sets border stroke thickness (px).	0.75	0.5	1.5		
+Two DESP	dS	Features	Toggles overlay elements: fill, glow, gradient, health, name, distance.		[Fill,Glow,Gradient,Health Bar,Name Tag,Distance,Blur Labels]	[true,true,true,true,true,true,true]	{Fill=0, Gradient=2, Name Tag=4, Blur Labels=6, Health Bar=3, Glow=1, Distance=5}	
+Two DESP	dO	Fill Alpha	Sets fill tint opacity (0–0.4).	0.12	0.0	0.4		
+Two DESP	dO	Glow Strength	Extends the glow this far outward (px).	8.0	2.0	20.0		
+Two DESP	dM	Animated	Oscillates the gradient over time.	true				
+Two DESP	dO	Animation Speed	Sets the gradient breathing speed (x).	1.4	0.3	4.0		
+Two DESP	dR	Health Position	Docks the health bar left, right, bottom, or top.	Left	[Left,Right,Bottom,Top]			
+Two DESP	dM	Health Text	Overlays numeric HP on the health bar.	true				
+Two DESP	dM	Health Shine	Sweeps an animated highlight along the health bar.	true				
+Two DESP	dO	Fade Speed	Fades boxes in and out at this speed (x).	14.0	3.0	30.0		
+Two DESP	dP	Max Distance	Hides boxes for players beyond this distance (blocks).	120	10	300		
+Two DESP	dP	Limit	Caps rendered boxes at this count (nearest players first).	30	1	200		
+Two DESP	dM	Menu Color	Uses the menu accent color for the box.	true				
+Two DESP	dN	Box Color	Sets the border color when not using the menu accent.	java.awt.Color[r=131,g=118,b=252]				
+Two DESP	dN	Gradient Color	Sets the gradient's bottom color.	java.awt.Color[r=255,g=106,b=200]				
+Two DESP	dN	Friend Color	Sets the box color for friends.	java.awt.Color[r=120,g=220,b=255]				
+Two DESP	dN	Health High	Sets the health bar color at full health.	java.awt.Color[r=120,g=245,b=140]				
+Two DESP	dN	Health Low	Sets the health bar color at low health.	java.awt.Color[r=255,g=74,b=74]				
+Velocity	dO	Chance	Rolls this chance on each knockback reduction (%).	60.0	0.0	100.0		
+Velocity	dM	Ignore Explosions	Skips reduction while flying away from explosions.	true				
+Velocity	dQ	Vertical	Takes a random share in this range of vertical knockback (%).	80.0	0.0	100.0	80.0	100.0
+Velocity	dQ	Horizontal	Takes a random share in this range of horizontal knockback (%).	80.0	0.0	100.0	80.0	100.0
+W Tap	dO	Chance	Rolls this chance on each W-tap (%).	100.0	0.0	100.0		
+W Tap	dQ	Hold Length	Releases W for a random time in this range (ms).	100.0	0.0	400.0	100.0	200.0
+W Tap	dQ	Reaction	Waits a random reaction time in this range after the hit (ms).	10.0	0.0	50.0	10.0	30.0
+Weather	dR	Mode	Spawns rain, snow, fireflies, or embers.	Rain	[Rain,Snow,Fireflies,Embers]			
+Weather	dP	Density	Caps particles at this count. Higher = denser, more GPU.	200	10	1500		
+Weather	dP	Radius	Spawns particles within this distance (blocks).	50	5	100		
+Weather	dO	Speed	Multiplies particle speed (x).	1.0	0.1	5.0		
+Weather	dO	Size	Multiplies particle size (x).	3.0	0.1	5.0		
+Weather	dM	Theme Color	Uses menu theme shades for particles.	true				
+Weather	dN	Color	Sets the particle color when not using the theme.	java.awt.Color[r=255,g=255,b=255]				
+Wind Charge Aura	dO	Reach	Attacks within this eye-to-hitbox distance (blocks). Server caps at 3.0.	2.95	1.0	3.0		
+Wind Charge Aura	dM	Humanized Aim	Adds a small distance-scaled yaw/pitch jitter to the attack rotation so every hit doesn't ship the exact eye-vector angle. Same jitter KillAura uses; auto-scales spread by 1/distance and clamps pitch to ±89.9 for Grim BadPacketsN.	true				
+Wind Charge Aura	dO	Max Yaw	Caps rotations at this yaw offset from your view (degrees).	180.0	0.0	180.0		
+Wind Charge Aura	dM	In Air Only	Only attacks wind charges while you are airborne.	true				
+XRay	dM	Full Bright	Fully lights every block. Some anticheats flag it; off keeps only ore glow.	true				
+Xbow Cart	dP	Switch Delay	Waits this many ticks between rail, cart, fire, and crossbow steps.	2	0	20		
+Xbow Cart	dM	Silent Aim	Aims at placements and the shot server-side; your camera never moves.	true				
+Xbow Cart	dO	Silent Aim FOV	Caps silent aim at this yaw offset per tick (degrees).	180.0	0.0	180.0		

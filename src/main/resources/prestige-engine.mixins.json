@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.zprestige.prestige.engine.mixin",
+  "plugin": "dev.zprestige.prestige.engine.EnginePlugin",
+  "compatibilityLevel": "JAVA_21",
+  "priority": 2000,
+  "client": [],
+  "injectors": { "defaultRequire": 1 }
+}

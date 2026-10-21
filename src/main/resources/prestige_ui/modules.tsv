@@ -1,0 +1,121 @@
+Combat	Aim Assist	Aims at targets
+Visual	Ambience	Changes the ambience of the game
+Combat	Anchor Exploder	Automatically explodes respawn anchors for you
+Combat	Anchor Macro	Explodes and places anchors automatically
+Combat	Anchor Pearl Catch	Pre-places and detonates a respawn anchor where enemy pearls land
+Combat	Anchor Placer	Automatically places respawn anchors for you
+Visual	Animations	Renders custom smooth swing animations
+Combat	Anti Action	Prevents certain bad actions from interrupting your pvp
+Combat	Anti Bot	Removes bots from the game
+Visual	Anti Resource Pack	Prevents servers from forcing a resource pack
+Misc	AntiTrap	Hides entities commonly used to bait trap-TPAs (armor stands, minecarts, etc).
+Combat	Anti Web	Escapes cobwebs automatically: waters the web away and scoops it back up
+Combat	Auto Anchor	Full auto-anchor: places, covers, charges, and detonates with human-like delays
+Misc	Auto Armor	Automatically equips the best armor from your inventory
+Combat	Auto Cart	Automatically places minecarts at your feet for cart-mode combat
+Misc	Auto Clicker	Automatically clicks your mouse
+Combat	Auto Crystal	Automatically places and explodes crystals
+Combat	Auto Drain	Automatically collects water/lava with a bucket
+Combat	Auto Elytra	Automatically puts on an elytra (and rockets)
+Combat	Auto Hit Crystal	Automatically hit crystals and attempts to d-tap them by syncing with enemy damage ticks
+Movement	Auto Jump Reset	Automatically jumps when taking knockback to reduce knockback
+Misc	Auto Loot	Helps with looting items from the ground
+Mace	Auto Mace	Swaps the mace in your hand with a different item
+Combat	Auto Obby Crystal	Full auto-crystal with real damage predictions, silent aim, and safe break modes
+Mace	Auto Pearl Catch	Automatically throws a pearl and a windcharge up in the sky
+Misc	Auto Pickaxe	Automatically switches to a pickaxe in your hotbar when mining the block below you
+Misc	Auto Pot	Automatically pots for you
+Mace	Auto Re Mace	Automatically re-maces someone after you mace them using elytra mace
+Combat	Auto Safe Cart	Automatically covers threatening minecarts with blocks
+Combat	Auto Shield	Automatically blocks with your shield in combat
+Combat	Auto Shield Breaker	Automatically breaks shields by silently attacking them
+Movement	Auto Short Pearl	Basically anti knockback
+Misc	Auto Text	Automatically sends a chat message
+Misc	Auto Tool	Automatically swaps to the best tool possible
+Combat	Auto Totem	Automatically re-totems when popped
+Combat	Backtrack	Backtracks packets for the target entity
+Mace	Breach Swap	Automatically swaps to a breach mace when hitting someone
+Combat	Cart Aura	Automatically attacks minecarts near you with human-like delays
+Combat	Cart Pearl Catch	Detonates a minecart where enemy pearls land
+Misc	Cart Refill	Auto-tops-up a chosen hotbar slot with TNT minecarts
+Misc	Cart Stealer	Automatically pulls minecarts out of shulkers
+Misc	Chest Stealer	Steals items out of chests
+Combat	Cobweb Placer	Places cobwebs on the block your looking at
+Misc	Criticals	Turns hits into critical hits
+Misc	Crystal Optimizer	Does not wait for server-side confirmation when breaking crystals
+Mace	Diagonal Pearl Catch	Catches a diagonally-thrown pearl and follows up with a wind charge
+Combat	Double Anchor	Automatically places another anchor (in the air) after anchoring
+Visual	ESP	Renders various things through walls
+Mace	Elytra Wind Charge	Goes on elytra and windcharges underneath you when you approach the ground to go up rapidly.
+Misc	Enemy Faker	Fakes your enemy
+Spear	Extended Reach	Increases reach by attribute swapping to spear
+Movement	Fake Lag	Lags your packets to make it seem like you are lagging
+Movement	Fast Bridge	Automatically sneaks on block edges
+Misc	Fast EXP	Spams EXP bottles
+Mace	Fast Pearl Catch	Pearl and wind charge back-to-back with no swap between the throws
+Misc	Fast Place	Allows you to place blocks faster
+Visual	Free Look	Allows you to look around without rotating
+Movement	Freecam	Allows you to move your camera around without actually moving your player
+Misc	Friends	Manages what to do with friends
+Combat	Ghost Place	Right-clicks blocks behind enemies instead of interacting with them
+Visual	Health Indicators	Shows health on players
+Visual	Hit Effect	Draws particles when hitting entities
+Combat	Hit Fix	Fixes bad hits
+Combat	Hit Flick	Flicks the camera off-target around each hit to obscure aim
+Combat	Hitboxes	Expands entity hitboxes
+Visual	Hud Editor	Opens the Hud Editor
+Combat	Instant Crossbow	Instantly swaps to a crossbow (even from your inventory) and auto-restores your slot
+Spear	Instant Lunge	Instantly lunges with the spear without needing to swap or click
+Combat	Instant Shield	One keybind to swap to a shield (even from your inventory), press again to swap back
+Visual	Item ESP	Highlights dropped items through walls
+Visual	Jump Circles	Draws circles when players jump
+Combat	Keep Sprint	Re-presses sprint after attacking to avoid losing the server-side sprint state
+Misc	Key Pearl	Swaps to pearl, throws it and then swaps back whenever enabled
+Mace	Key Wind Charge	Throws a windcharge upon enabling
+Combat	Kill Aura	Automatically attacks entities within range
+Mace	Mace Pot	Throws speed and strength pots from your inventory when needed
+Mace	Mace Prediction	Shows your opponents reach and predicts their falling/flying path when macing
+Misc	Middle Click Friend	Adds friends when middle clicking on them
+Misc	Name Hider	Attempts to replace your name in chat and F5
+Visual	Name Tags	Renders a name tag above players
+Visual	No Bounce	Removes the bobbing animation in your hotbar when using any form of crystal modules
+Movement	No Jump Delay	Removes the delay between jumps
+Combat	No Miss Delay	Removes the sword delay after missing
+Visual	Ore Simulation	Simulates ore veins by using the seed for xray
+Movement	Parkour	Automatically jumps at the edges of blocks.
+Combat	Pearl Follow	Auto-chases enemy pearls by matching where theirs is about to land
+Visual	Pearl Trajectory	Shows pearl paths and landing positions
+Mace	Pearl Wind Charge	Throws a pearl and instantly windcharge when the pearl lands
+Misc	Potion Refill	Refills your hotbar with splash potions
+Combat	Predict Double Hand	Predicts when you will pop and mainhand totems for you
+Misc	Reach	Increases your reach
+Misc	Refill	Tops off hotbar stacks from the rest of your inventory
+Visual	Render Optimizer	Removes certain visuals from your screen
+Misc	Right Clicker	Automatically right clicks for you
+Combat	Safe Anchor	Prevents anchors from dealing damage to you
+Misc	Self Destruct	Destructs the client to hopefully prevent detection when screenshared
+Mace	Shield Drain	Repeatedly hits a target's shield to drain its durability during mace combat
+Visual	Shield Renderer	Modifies the look of your and other peoples shields
+Movement	Short Pearl	Throws a pearl at your feet
+Mace	Short Wind Charge	Throws a wind charge at your feet
+Combat	Silent Aim	Redirects missed hits to hit ones
+Spear	Spear Damage Indicator	Shows how much damage you have accumulated for the spear
+Spear	Spear Mace Double Tap	Double taps people with a spear then mace combination
+Movement	Sprint	Automatically sprints for you
+Visual	Storage ESP	Highlights storage blocks through walls
+Misc	Streamer Mode	Hides everyones names on your screen
+Combat	Swap Hit	Briefly swaps to a sword to hit, then swaps back to your previous slot
+Visual	Target Renderer	Highlights your target during combat
+Misc	Teams	Prevents you from attacking teammates in certain game modes
+Visual	Totem Animation	Increases the speed of totem animations
+Combat	Totem Hit	More knockback when hitting players with totems
+Visual	Trails	Leaves a trail behind players
+Visual	Trajectories	Shows trajectories of certain items
+Combat	Triggerbot	Attacks entities when looking at them
+Visual	Two DESP	Draws 2D boxes around players
+Movement	Velocity	Reduces knockback you take
+Movement	W Tap	Releases W and holds it again to reset server-side sprinting for more knockback
+Visual	Weather	Renders custom weather effects
+Mace	Wind Charge Aura	Automatically hits wind charges around you
+Visual	XRay	See ores and valuables through walls
+Combat	Xbow Cart	Places a minecart and detonates it with a charged crossbow
